@@ -1,0 +1,6 @@
+flask/
+gen/
+
+*.pyc
+
+.webassets-cache
