@@ -1,0 +1,9 @@
+# Flask
+Flask==0.10.1
+Jinja2==2.7.3
+
+# Assets
+Flask-assets==0.10
+
+# Deployment
+gunicorn>=19.1.1
