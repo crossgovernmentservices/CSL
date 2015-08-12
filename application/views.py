@@ -14,6 +14,10 @@ def profile():
     courses = json.load(data_file)
   return render_template('profile.html', courses=courses)
 
+@app.route('/record')
+def record():
+  return render_template('record.html')
+
 @app.route('/styleguide')
 def styleguide():
   return render_template('styleguide.html')
