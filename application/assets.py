@@ -17,7 +17,15 @@ css_styleguide = Bundle(
   depends="**/*.scss"
 )
 
+css_record = Bundle(
+  'css/record.scss',
+  filters='scss',
+  output='gen/css/record.css',
+  depends="**/*.scss"
+)
+
 assets = Environment()
 
 assets.register('css_govuk', css_govuk)
 assets.register('css_styleguide', css_styleguide)
+assets.register('css_record', css_record)
