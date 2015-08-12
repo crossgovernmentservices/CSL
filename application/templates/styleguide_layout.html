@@ -1,0 +1,29 @@
+{% extends "govuk_template/views/layouts/govuk_template.html" %}
+
+{% block head %}
+
+  <link rel="stylesheet" href="/static/govuk_template/assets/stylesheets/govuk-template.css">
+
+  {% assets "css_styleguide" %}
+    <link rel="stylesheet" type="text/css"  media="screen" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+{% endblock %}
+
+{% block header_class %}with-proposition{% endblock %}
+
+{% block proposition_header %}
+<div class='header-proposition'>
+  <div class='content'>
+    <nav id='proposition-menu'>
+      <a href='/' id='proposition-name'>Civil Service Learning</a>
+    </nav>
+  </div>
+</div>
+{% endblock %}
+
+{% block body_end %}
+
+  {# js scripts here #}
+
+{% endblock %}

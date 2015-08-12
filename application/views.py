@@ -13,3 +13,7 @@ def profile():
   with open('application/data/courses.json') as data_file:
     courses = json.load(data_file)
   return render_template('profile.html', courses=courses)
+
+@app.route('/styleguide')
+def styleguide():
+  return render_template('styleguide.html')
