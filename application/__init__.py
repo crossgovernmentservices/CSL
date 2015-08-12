@@ -5,6 +5,9 @@ from flask import Flask
 app = Flask(__name__)
 app.config.from_object('config')
 
+# Small thing to allow source code examples in a template
+app.jinja_env.globals['include_raw'] = lambda filename : app.jinja_loader.get_source(app.jinja_env, filename)[0]
+
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 
