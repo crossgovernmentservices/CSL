@@ -16,7 +16,9 @@ def profile():
 
 @app.route('/record')
 def record():
-  return render_template('record.html')
+  with open('application/data/courses.json') as data_file:
+    courses = json.load(data_file)
+  return render_template('record.html', courses=courses)
 
 @app.route('/styleguide')
 def styleguide():
