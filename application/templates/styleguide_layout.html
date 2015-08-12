@@ -2,6 +2,9 @@
 
 {% block head %}
 
+  <!-- Styleguide website only assets - for examples and code highlighting -->
+  <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="/static/vendor/prism/prism.css"><!--<![endif]-->
+
   <link rel="stylesheet" href="/static/govuk_template/assets/stylesheets/govuk-template.css">
 
   {% assets "css_styleguide" %}
@@ -27,6 +30,9 @@
 {% endblock %}
 
 {% block body_end %}
+
+  <!-- Styleguide website only assets - for examples and code highlighting -->
+  <!--[if gt IE 8]><!--><script type="text/javascript" src="/static/vendor/prism/prism.js"></script><!--<![endif]-->
 
   {# js scripts here #}
 
