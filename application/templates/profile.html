@@ -5,7 +5,59 @@
 {% block content %}
 <main id="content" role="main">
 
-  <h1 class="heading-xlarge">Profile page</h1>
+  <div class="grid-row">
+    <div class="column-half">
+
+      <section class="profile">
+        <img src="http://placehold.it/100x100" alt="" />
+        <p class="lede">Colm Britton</p>
+        <p>colm.britton@digital.cabinet-office.gov.uk</p>
+      </section>
+
+    </div>
+
+    <div class="column-half">
+      <section class="component--finder">
+        <h2 class="heading-small component__head">Quick course search</h2>
+        <p>Search by name, skill or keyword</p>
+        <form action="" class="form">
+          <div class="form-group people-finder-search">
+            <label class="people-finder-label" for="person-search">find courses</label>
+            <input type="text" class="people-finder-input" id="person-search">
+            <input class="submit" type="submit" value="Search">
+          </div>
+        </form>
+      </section>
+    </div>
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-half">
+      <h2 class="heading-small">Mandatory courses</h2>
+      <ul class="course-list">
+
+        {% from "partials/course_list.html" import build_course_item %}
+        {% for course in courses.mandatory %}
+          {{ build_course_item(course) }}
+        {% endfor %}
+
+      </ul>
+      <a class="foot-link" href="/learning/mandatory">see full list of mandatory courses</a>
+    </div>
+
+    <div class="column-half">
+      <h2 class="heading-small">Your courses</h2>
+      <ul class="course-list">
+
+        {% from "partials/course_list.html" import build_course_item %}
+        {% for course in courses.personal %}
+          {{ build_course_item(course) }}
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div>
 
 </main>
 {% endblock %}
