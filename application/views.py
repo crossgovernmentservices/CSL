@@ -8,6 +8,10 @@ from application import app
 def index():
   return render_template('index.html')
 
+# ------------------------------------
+# MVP pages
+# ------------------------------------
+
 @app.route('/profile')
 def profile():
   with open('application/data/courses.json') as data_file:
@@ -22,8 +26,18 @@ def record():
 
 @app.route('/search')
 def mvp_search():
+  return render_template('course_search_mvp.html')
+
+# ------------------------------------
+# Future pages
+# ------------------------------------
+@app.route('/future/search')
+def future_search():
   return render_template('course_search.html')
 
+# ------------------------------------
+# Styleguide pages
+# ------------------------------------
 @app.route('/styleguide')
 def styleguide():
   return render_template('styleguide.html')
