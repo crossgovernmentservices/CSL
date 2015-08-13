@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block page_title %}Learning record | CSL{% endblock %}
+
+{% block head %}
+
+  {{ super() }}
+
+  {% assets "css_record" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <header class="header-group">
+    <h1 class="sub-heading">Civil Service Learning</h1>
+    <h2 class="heading-xlarge post-sub-heading">Course search</h2>
+  </header>
+
+</main>
+
+{% endblock %}

@@ -20,6 +20,10 @@ def record():
     courses = json.load(data_file)
   return render_template('record.html', courses=courses)
 
+@app.route('/search')
+def mvp_search():
+  return render_template('course_search.html')
+
 @app.route('/styleguide')
 def styleguide():
   return render_template('styleguide.html')
