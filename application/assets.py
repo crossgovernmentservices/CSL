@@ -12,6 +12,7 @@ css_govuk = Bundle(
 css_styleguide = Bundle(
   'css/govuk.scss',
   'css/styleguide.scss',
+  'css/styleguide-csl.scss',
   filters='scss',
   output='gen/css/styleguide.css',
   depends="**/*.scss"

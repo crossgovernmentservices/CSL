@@ -46,3 +46,6 @@ def styleguide():
 def sg_forms():
   return render_template('styleguide/forms.html')
 
+@app.route('/styleguide/search')
+def sg_search():
+  return render_template('styleguide/search.html')
