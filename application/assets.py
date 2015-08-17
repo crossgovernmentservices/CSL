@@ -18,6 +18,14 @@ css_styleguide = Bundle(
   depends="**/*.scss"
 )
 
+# styles common across the learning pages
+css_learning = Bundle(
+  'css/learning.scss',
+  filters='scss',
+  output='gen/css/learning.css',
+  depends="**/*.scss"
+)
+
 css_record = Bundle(
   'css/record.scss',
   filters='scss',
@@ -29,4 +37,5 @@ assets = Environment()
 
 assets.register('css_govuk', css_govuk)
 assets.register('css_styleguide', css_styleguide)
+assets.register('css_learning', css_learning)
 assets.register('css_record', css_record)
