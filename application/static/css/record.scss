@@ -10,3 +10,21 @@
 .info {
   margin: 0 0 $gutter-half;
 }
+
+.filters-content {
+  @extend %contain-floats;
+  background: $panel-colour;
+  padding: 0 10px;
+}
+
+.filter-field {
+  margin: $gutter-half 0;
+
+  label {
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+  }
+}
