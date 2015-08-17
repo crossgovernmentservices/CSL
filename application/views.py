@@ -28,6 +28,10 @@ def record():
 def mvp_search():
   return render_template('course_search_mvp.html')
 
+@app.route('/courses/digital-by-default')
+def course_d_by_d():
+  return render_template('courses/digital_by_default.html')
+
 # ------------------------------------
 # Future pages
 # ------------------------------------
