@@ -50,3 +50,16 @@
   border-bottom: 1px solid $border-colour;
   margin-bottom: 10px;
 }
+
+.course-result {
+  border-bottom: 1px solid $border-colour;
+  padding: 10px 0;
+}
+
+.course-result__meta {
+  color: $secondary-text-colour;
+}
+
+.course-result__title {
+  margin: 5px 0 $gutter-half;
+}
