@@ -7,6 +7,7 @@
 
 @import 'components/search';
 
+
 .info {
   margin: 0 0 $gutter-half;
 }
@@ -41,4 +42,10 @@
     padding: 2px;
     margin-left: 5px;
   }
+}
+
+.top-search {
+  padding-bottom: $gutter-half;
+  border-bottom: 1px solid $border-colour;
+  margin-bottom: 10px;
 }

@@ -15,6 +15,10 @@
   }
 }
 
+.search__label {
+  @extend .lede;
+}
+
 .search__input {
   width: calc(100% - 37px);
   line-height: 48px;
@@ -33,7 +37,7 @@
   }
 }
 
-.search__label {
+.search__placeholder {
   position: absolute;
   top: 0;
   left: 0;
