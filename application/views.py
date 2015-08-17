@@ -53,3 +53,7 @@ def sg_forms():
 @app.route('/styleguide/search')
 def sg_search():
   return render_template('styleguide/search.html')
+
+@app.route('/styleguide/typography')
+def sg_typog():
+  return render_template('styleguide/typography.html')
