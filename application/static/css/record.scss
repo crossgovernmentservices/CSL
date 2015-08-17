@@ -28,3 +28,17 @@
     width: 100%;
   }
 }
+
+.ta-right {
+  text-align: right;
+}
+
+.sort-results {
+  select {
+    font-size: 19px;
+    line-height: 1.5em;
+    border: 1px solid $border-colour;
+    padding: 2px;
+    margin-left: 5px;
+  }
+}
