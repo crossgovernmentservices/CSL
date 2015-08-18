@@ -32,6 +32,10 @@ def mvp_search():
 def course_d_by_d():
   return render_template('courses/digital_by_default.html')
 
+@app.route('/courses/communication-skills')
+def course_comm_skills():
+  return render_template('courses/communication_skills.html')
+
 # ------------------------------------
 # Future pages
 # ------------------------------------
