@@ -39,6 +39,10 @@ def course_d_by_d():
 def future_search():
   return render_template('course_search.html')
 
+@app.route('/future/calendar-view')
+def future_calendar_view():
+  return render_template('calendar-view.html')
+
 # ------------------------------------
 # Styleguide pages
 # ------------------------------------
