@@ -2,6 +2,16 @@
 
 {% block page_title %}Profile page{% endblock %}
 
+{% block head %}
+
+  {{ super() }}
+
+  {% assets "css_profile" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+{% endblock %}
+
 {% block content %}
 <main id="content" role="main">
 
@@ -18,13 +28,13 @@
 
     <div class="column-half">
       <section class="component--finder">
-        <h2 class="heading-small component__head">Quick course search</h2>
+        <h2 class="heading-small">Quick course search</h2>
         <p>Search by name, skill or keyword</p>
         <form action="" class="form">
-          <div class="form-group people-finder-search">
-            <label class="people-finder-label" for="person-search">find courses</label>
-            <input type="text" class="people-finder-input" id="person-search">
-            <input class="submit" type="submit" value="Search">
+          <div class="form-group main-search search--dark">
+            <label class="people-finder-label search__placeholder" for="person-search">find courses</label>
+            <input type="text" class="people-finder-input search__input" id="person-search">
+            <input class="submit search__submit" type="submit" value="Search">
           </div>
         </form>
       </section>

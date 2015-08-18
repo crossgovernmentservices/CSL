@@ -26,6 +26,13 @@ css_learning = Bundle(
   depends="**/*.scss"
 )
 
+css_profile = Bundle(
+  'css/profile.scss',
+  filters='scss',
+  output='gen/css/profile.css',
+  depends="**/*.scss"
+)
+
 css_record = Bundle(
   'css/record.scss',
   filters='scss',
@@ -38,4 +45,5 @@ assets = Environment()
 assets.register('css_govuk', css_govuk)
 assets.register('css_styleguide', css_styleguide)
 assets.register('css_learning', css_learning)
+assets.register('css_profile', css_profile)
 assets.register('css_record', css_record)
