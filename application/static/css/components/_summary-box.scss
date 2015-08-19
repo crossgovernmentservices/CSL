@@ -1,0 +1,11 @@
+.summary-box {
+  border: 2px solid $turquoise;
+  margin-bottom: $gutter-half;
+}
+
+.summary-box__heading {
+  margin: 0;
+  background: $turquoise;
+  color: $page-colour;
+  padding: 5px 15px;
+}
