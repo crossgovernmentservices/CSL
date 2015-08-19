@@ -14,3 +14,30 @@
   color: $page-colour;
   padding: 5px 5px 5px 10px;
 }
+
+.profile-section {
+  border-top: 3px solid $link-colour;
+  margin-top: $gutter-half;
+}
+
+.profile-section--top {
+  margin-top: $gutter-half;
+}
+
+.profile {
+  @extend %contain-floats;
+
+  .profile__name {
+    font-size: 24px;
+    line-height: 48px;
+  }
+
+  img {
+    float: left;
+    margin-right: $gutter-half;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

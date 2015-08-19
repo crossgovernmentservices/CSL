@@ -17,14 +17,28 @@
 
   {% include "partials/nav-strip.html" ignore missing %}
 
-  <div class="grid-row">
+  <section class="profile-section--top">
+    <div class="grid-row">
     <div class="column-half">
 
       <section class="profile">
         <img src="http://placehold.it/100x100" alt="" />
-        <p class="lede">Colm Britton</p>
+        <h2 class="profile__name">Colm Britton</h2>
         <p>colm.britton@digital.cabinet-office.gov.uk</p>
       </section>
+
+      <table>
+        <tbody>
+          <tr>
+            <td>Profession</td>
+            <td>Digital</td>
+          </tr>
+          <tr>
+            <td>Notifications</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
 
     </div>
 
@@ -43,33 +57,37 @@
     </div>
 
   </div>
+  </section>
 
-  <div class="grid-row">
-    <div class="column-half">
-      <h2 class="heading-small">Mandatory courses</h2>
-      <ul class="course-list">
+  <section class="profile-section">
+    <h2 class="heading-medium">Upcoming courses</h2>
+    <div class="grid-row">
+      <div class="column-half">
+        <h3 class="heading-small">Mandatory</h2>
+        <ul class="course-list">
 
-        {% from "partials/course_list.html" import build_course_item %}
-        {% for course in courses.mandatory %}
-          {{ build_course_item(course) }}
-        {% endfor %}
+          {% from "partials/course_list.html" import build_course_item %}
+          {% for course in courses.mandatory %}
+            {{ build_course_item(course) }}
+          {% endfor %}
 
-      </ul>
-      <a class="foot-link" href="/learning/mandatory">see full list of mandatory courses</a>
+        </ul>
+        <a class="foot-link" href="/learning/mandatory">see full list of mandatory courses</a>
+      </div>
+
+      <div class="column-half">
+        <h3 class="heading-small">Self learning</h2>
+        <ul class="course-list">
+
+          {% from "partials/course_list.html" import build_course_item %}
+          {% for course in courses.personal %}
+            {{ build_course_item(course) }}
+          {% endfor %}
+
+        </ul>
+      </div>
     </div>
-
-    <div class="column-half">
-      <h2 class="heading-small">Your courses</h2>
-      <ul class="course-list">
-
-        {% from "partials/course_list.html" import build_course_item %}
-        {% for course in courses.personal %}
-          {{ build_course_item(course) }}
-        {% endfor %}
-
-      </ul>
-    </div>
-  </div>
+  </section>
 
 </main>
 {% endblock %}
