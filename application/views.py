@@ -30,7 +30,7 @@ def mvp_search():
 
 @app.route('/courses/digital-by-default')
 def course_d_by_d():
-  return render_template('courses/digital_by_default.html')
+  return render_template('courses/digital_by_default.html', type="e-learning")
 
 @app.route('/courses/communication-skills')
 def course_comm_skills():

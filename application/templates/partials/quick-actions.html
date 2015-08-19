@@ -1,7 +1,11 @@
 <div class="quick-actions">
   <h4 class="heading-small quick-actions__heading">Quick actions</h4>
   <ul>
+    {% if type == "e-learning" %}
+    <li><button class="quick-action__btn">Start course now</button></li>
+    {% else %}
     <li><button class="quick-action__btn">Book now</button></li>
+    {% endif %}
     <li><button class="quick-action__btn">Save to PDP</button></li>
   </ul>
 </div>
