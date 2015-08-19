@@ -16,7 +16,7 @@
 }
 
 .profile-section {
-  border-top: 3px solid $link-colour;
+//  border-top: 3px solid $link-colour;
   margin-top: $gutter-half;
 }
 
@@ -42,4 +42,8 @@
   p {
     margin-bottom: 0;
   }
+}
+
+.profile-section__heading {
+  margin-top: 2*$gutter;
 }
