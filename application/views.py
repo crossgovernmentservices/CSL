@@ -65,3 +65,7 @@ def sg_search():
 @app.route('/styleguide/typography')
 def sg_typog():
   return render_template('styleguide/typography.html')
+
+@app.route('/styleguide/components')
+def sg_components():
+  return render_template('styleguide/components.html')
