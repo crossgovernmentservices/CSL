@@ -1,6 +1,11 @@
 .summary-box {
   border: 2px solid $turquoise;
   margin-bottom: $gutter-half;
+
+  > p,
+  > a {
+    padding: 0 $gutter-half;
+  }
 }
 
 .summary-box__heading {
