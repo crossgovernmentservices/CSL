@@ -23,6 +23,19 @@
     </div>
   </div>
 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="example-view">
+        {% include "snippets/summary-box.html" ignore missing %}
+      </div>
+    </div>
+    <div class="column-third">
+      <div class="example-code">
+<pre><code class="language-markup">{{ include_raw('snippets/summary-box.html') | escape }}</code></pre>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 {% endblock %}

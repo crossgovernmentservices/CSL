@@ -31,13 +31,3 @@
     margin-top: 0;
   }
 }
-
-.key-info-table {
-  td {
-    padding-left: 15px;
-  }
-  tr > td:first-child {
-    font-weight: bold;
-    border-right: 1px solid $panel-colour;
-  }
-}

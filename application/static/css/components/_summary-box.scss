@@ -9,3 +9,16 @@
   color: $page-colour;
   padding: 5px 15px;
 }
+
+// ------------
+// specifics for key info box on courses
+// ------------
+.key-info-table {
+  td {
+    padding-left: 15px;
+  }
+  tr > td:first-child {
+    font-weight: bold;
+    border-right: 1px solid $panel-colour;
+  }
+}
