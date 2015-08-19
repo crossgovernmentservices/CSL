@@ -46,6 +46,7 @@
 .example-code pre {
   position: relative;
   padding-top: $gutter;
+  margin-top: 0;
   margin-bottom: $gutter;
 
   &:after {
