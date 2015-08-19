@@ -17,3 +17,16 @@
     display: inline-block;
   }
 }
+
+.course__description {
+  padding-top: $gutter;
+}
+
+.course__description__content {
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child {
+    margin-top: 0;
+  }
+}
