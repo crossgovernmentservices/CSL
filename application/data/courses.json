@@ -10,6 +10,7 @@
     { "name": "Confirmation bias",
       "date": "5th Jun",
       "status": "completed",
+      "url": "/courses/unconcious-bias",
       "vevent": {
         "categories": "EDUCATION", "uname": "mand2", "dateISO": "20150605"
       }
