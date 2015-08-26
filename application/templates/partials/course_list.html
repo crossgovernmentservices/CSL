@@ -31,7 +31,13 @@
 
 <tr>
   <td>{{ course.date }}</td>
-  <td>{{ course.name }}</td>
+  <td>
+  {% if course.url is defined %}
+    <a href="{{ course.url }}">{{ course.name }}</a>
+  {% else %}
+    {{ course.name }}
+  {% endif %}
+  </td>
   <td>{{ course.score }}</td>
   <td>{{ course.type }}</td>
   <td>{{ course.expiry }}</td>
