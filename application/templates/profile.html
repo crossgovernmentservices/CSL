@@ -99,3 +99,22 @@
 
 </main>
 {% endblock %}
+
+{% block body_end %}
+
+  {{ super() }}
+
+  <script type="text/javascript">
+  (function($){
+    $(function() {
+      // redirect to search page
+      $(".search__submit").on("click", function(e) {
+        e.preventDefault();
+        window.location.href = "/search";
+        return false;
+      });
+    });
+  }(jQuery));
+  </script>
+
+{% endblock %}
