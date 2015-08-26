@@ -30,6 +30,11 @@
     }
   ],
   "personal": [
+    { "name": "Digital by Default", 
+      "date": "Online", 
+      "status": "started",
+      "url": "/courses/digital-by-default"
+    },
     { "name": "SCRUM Master",
       "date": "28th June",
       "status": "booked",

@@ -47,3 +47,15 @@
 .profile-section__heading {
   margin-top: 2*$gutter;
 }
+
+.course-list__item a {
+  text-decoration: none;
+
+  &:visited {
+    color: $link-colour;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
