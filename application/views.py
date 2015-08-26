@@ -38,7 +38,7 @@ def course_comm_skills():
 
 @app.route('/courses/unconcious-bias')
 def course_unconscious_bias():
-  return render_template('courses/unconscious_bias.html', type="e-learning")
+  return render_template('courses/unconscious_bias.html', type="e-learning", status="completed")
 
 # ------------------------------------
 # Future pages
