@@ -36,6 +36,10 @@ def course_d_by_d():
 def course_comm_skills():
   return render_template('courses/communication_skills.html')
 
+@app.route('/courses/unconcious-bias')
+def course_unconscious_bias():
+  return render_template('courses/unconscious_bias.html', type="e-learning")
+
 # ------------------------------------
 # Future pages
 # ------------------------------------
