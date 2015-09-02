@@ -9,6 +9,13 @@ def index():
   return render_template('index.html')
 
 # ------------------------------------
+# Rebrand pages
+# ------------------------------------
+@app.route('/rebrand/signin')
+def rb_signin():
+  return render_template('rebrand/signin.html')
+
+# ------------------------------------
 # MVP pages
 # ------------------------------------
 
