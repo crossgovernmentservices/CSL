@@ -15,6 +15,10 @@ def index():
 def rb_signin():
   return render_template('rebrand/signin.html')
 
+@app.route('/rebrand/professions')
+def rb_professions():
+  return render_template('rebrand/professions.html')
+
 # ------------------------------------
 # MVP pages
 # ------------------------------------

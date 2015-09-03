@@ -10,3 +10,4 @@ class ProdConfig(object):
 class DevConfig(object):
   DEBUG = True
   ASSETS_DEBUG = True
+

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}CSL Sign in screen{% endblock %}
+
+{% block head %}
+
+  {{ super() }}
+
+  {% assets "css_rebrand" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">Professions and specialisms</h1>
+
+  <div class="text intro">
+    <p>Professions have been established across government to ensure that the Civil Service and its people are equipped with the capability and resources to continue to develop and deliver a professional service in the future. As each profession develops its own pages we will host them to enable you to find links to a range of resources that will give you information about your own profession and opportunities that will support your development.</p>
+
+    <p>The Professions Best Practice framework is intended to support Civil Service professions in implementing and/or maintaining consistent professional standards and best practice.</p>
+
+  <p>It includes guidance on the key components for a successful profession and a tool to analyse professional maturity.</p>
+
+  </div>
+
+  <h2 class="heading-large">Professions</h2>
+  <ul>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-corporate-finance-profession-cfp">Corporate Finance Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-communication-service">Government Communication Service</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-economic-service">Government Economic Service</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-finance-profession">Government Finance Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-it-profession">Government IT Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-knowledge-information-management-profession">Government Knowledge &amp; Information Management Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-legal-service">Government Legal Service</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-occupational-psychology-profession">Government Occupational Psychology Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-operational-research-service">Government Operational Research Service</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-planning-inspectors">Government Planning Inspectors</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-the-government-planning-profession">Government Planning Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-property-profession">Government Property Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-science-engineering">Government Science and Engineering Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/government-security-profession">Government Security Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-social-research-profession">Government Social Research Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-statistical-service">Government Statistical Service Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-tax-profession">Government Tax Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-government-veterinary-surgeons">Government Veterinary Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-human-resources-profession">Human Resources Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-intelligence-analysis-profession">Intelligence Analysis</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-internal-audit-profession">Internal Audit Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-medical-profession">Medical Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-operational-delivery-profession">Operational Delivery Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-policy-profession">Policy Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-procurement-profession">Procurement Profession</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/civil-service-project-delivery-profession">Project Delivery Profession</a></li>
+  </ul>
+
+  <h2 class="heading-large">Specialisms</h2>
+
+  <ul>
+    <li><a href="">Business continuity</a></li>
+    <li><a href="">Healthy and safety</a></li>
+    <li><a href="">International</a></li>
+    <li><a href="">Sponsorship</a></li>
+  </ul>
+
+</main>
+
+<div class="feedback-footer">
+  <a href="">Is there anything wrong with this page?</a>
+</div>
+{% endblock %}
