@@ -19,6 +19,10 @@ def rb_signin():
 def rb_professions():
   return render_template('rebrand/professions.html')
 
+@app.route('/rebrand/guide-priority-learning')
+def rb_priorities():
+  return render_template('rebrand/priority-learning.html')
+
 # ------------------------------------
 # MVP pages
 # ------------------------------------

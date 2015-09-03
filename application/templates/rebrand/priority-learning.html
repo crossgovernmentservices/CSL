@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block page_title %}CSL Sign in screen{% endblock %}
+
+{% block head %}
+
+  {{ super() }}
+
+  {% assets "css_rebrand" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">Guide to priority learning</h1>
+
+  <div class="text">
+    <p>There’s never been a better time to think about the skills you need to develop. The <a href="https://www.gov.uk/government/publications/civil-service-capabilities-plan" target="_blank">Civil Service Capabilities Plan – 2014 Refresh</a> confirms our ambition to be a more capable Civil Service by continuing to build capability in the four priority areas identified in the first year of the plan: commercial skills and behaviours, delivering successful projects and programmes, leading and managing change and redesigning services and delivering them digitally. All of us have a role to play in building a more capable Civil Service.</p>
+
+    <p>Visit the pages below to find out how to boost your skills in these priority areas:</p>
+
+    <ul>
+      <li><a href="https://civilservicelearning.civilservice.gov.uk/commercial">Commercial</a></li>
+      <li><a href="https://civilservicelearning.civilservice.gov.uk/Project-delivery">Project delivery</a></li>
+      <li><a href="https://civilservicelearning.civilservice.gov.uk/Digital">Digital</a></li>
+      <li><a href="https://civilservicelearning.civilservice.gov.uk/change-leadership">Change leadership</a></li>
+    </ul>
+
+    <p>Civil Service Learning has also developed <a href="https://www.gov.uk/government/publications/civil-service-capabilities-plan-guide-to-priority-learning" target="_blank">Your guide to priority learning</a> which provides an at-a-glance view of the key learning available to support you in building your capability in the four priority areas. All of the information in this guide is also available on these pages.</p>
+
+    <p>Trouble booking for any courses? Please contact the Civil Service Learning helpdesk on 0203 367 8316 or <a href="mailto:helpdesk@civilservicelearning.org.uk">helpdesk@civilservicelearning.org.uk</a></p>
+  </div>
+
+</main>
+
+<div class="feedback-footer">
+  <a href="">Is there anything wrong with this page?</a>
+</div>
+{% endblock %}
