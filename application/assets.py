@@ -40,6 +40,13 @@ css_record = Bundle(
   depends="**/*.scss"
 )
 
+css_rebrand = Bundle(
+  'css/rebrand.scss',
+  filters='scss',
+  output='gen/css/rebrand.css',
+  depends='**/*.scss'
+)
+
 assets = Environment()
 
 assets.register('css_govuk', css_govuk)
@@ -47,3 +54,4 @@ assets.register('css_styleguide', css_styleguide)
 assets.register('css_learning', css_learning)
 assets.register('css_profile', css_profile)
 assets.register('css_record', css_record)
+assets.register('css_rebrand', css_rebrand)

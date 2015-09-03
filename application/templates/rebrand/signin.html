@@ -2,6 +2,16 @@
 
 {% block page_title %}CSL Sign in screen{% endblock %}
 
+{% block head %}
+
+  {{ super() }}
+
+  {% assets "css_rebrand" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+{% endblock %}
+
 {% block content %}
 <main id="content" role="main">
 
@@ -32,4 +42,8 @@
   </form>
 
 </main>
+
+<div class="feedback-footer">
+  <a href="">Is there anything wrong with this page?</a>
+</div>
 {% endblock %}
