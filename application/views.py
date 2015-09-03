@@ -23,6 +23,10 @@ def rb_professions():
 def rb_priorities():
   return render_template('rebrand/priority-learning.html')
 
+@app.route('/rebrand/commercial')
+def rb_commercial():
+  return render_template('rebrand/commercial.html')
+
 # ------------------------------------
 # MVP pages
 # ------------------------------------
