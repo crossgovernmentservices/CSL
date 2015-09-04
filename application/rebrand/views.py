@@ -14,6 +14,7 @@ blueprint = Blueprint(
 # Rebrand pages
 # ------------------------------------
 @blueprint.route('/')
+@blueprint.route('/signin')
 def signin():
   return render_template('signin.html')
 
