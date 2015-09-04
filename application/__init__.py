@@ -36,5 +36,5 @@ from flask_basicauth import BasicAuth
 basic_auth = BasicAuth(app)
 
 from application import rebrand
-app.register_blueprint(rebrand.views.blueprint, url_prefix='/test')
+app.register_blueprint(rebrand.views.blueprint, url_prefix='/rebrand')
 

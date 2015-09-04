@@ -41,7 +41,7 @@ css_record = Bundle(
 )
 
 css_rebrand = Bundle(
-  'css/rebrand.scss',
+  'rebrand/css/rebrand.scss',
   filters='scss',
   output='gen/css/rebrand.css',
   depends='**/*.scss'

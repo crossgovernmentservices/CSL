@@ -9,25 +9,6 @@ def index():
   return render_template('index.html')
 
 # ------------------------------------
-# Rebrand pages
-# ------------------------------------
-@app.route('/rebrand/signin')
-def rb_signin():
-  return render_template('rebrand/signin.html')
-
-@app.route('/rebrand/professions')
-def rb_professions():
-  return render_template('rebrand/professions.html')
-
-@app.route('/rebrand/guide-priority-learning')
-def rb_priorities():
-  return render_template('rebrand/priority-learning.html')
-
-@app.route('/rebrand/commercial')
-def rb_commercial():
-  return render_template('rebrand/commercial.html')
-
-# ------------------------------------
 # MVP pages
 # ------------------------------------
 
