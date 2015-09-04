@@ -18,6 +18,18 @@ blueprint = Blueprint(
 def signin():
   return render_template('signin.html')
 
+@blueprint.route('/home')
+def home():
+  return render_template('home.html')
+
+@blueprint.route('/user')
+def user():
+  return render_template('user.html')
+
+@blueprint.route('/course-e-learning')
+  def course_e_learning():
+    return render_template('course-e-learning.html')
+
 @blueprint.route('/professions')
 def professions():
   return render_template('professions.html')
