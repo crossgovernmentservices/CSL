@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+  {{ super() }}
+
+  {% assets "css_rebrand" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
+
+{% endblock %}
+
+{% block body_end %}
+
+  {{ super() }}
+
+  {# js assets to go here #}
+
+{% endblock %}
