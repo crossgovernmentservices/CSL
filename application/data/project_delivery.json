@@ -1,0 +1,60 @@
+{  
+   "e-learning":[  
+      {  
+         "name":"Introduction to projects",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/introduction-projects"
+      },
+      {  
+         "name":"Introductory certificate in project management",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/introductory-certificate-project-management"
+      },
+      {  
+         "name":"Successful project delivery",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/successful-project-delivery"
+      },
+      {  
+         "name":"Government projects",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/government-projects"
+      }
+   ],
+   "f2f":[
+      {
+        "name": "APM introductory certificate",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/apm-introductory-certificate"
+      },
+      {
+        "name": "Running small projects",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/running-small-projects"
+      },
+      {
+        "name": "Project leadership workshop",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/project-leadership-workshop2"
+      }
+   ],
+   "resources":[
+      {
+        "name": "First principles of project management",
+        "url": "https://member.goodpractice.net/csl-competency/resources/delivering-results/project-management/fundamentals-of-project-management/first-principles-of-project-management.gp"
+      },
+      {
+        "name": "How to ensure project success",
+        "url": "https://member.goodpractice.net/csl-competency/resources/delivering-results/project-management/fundamentals-of-project-management/how-to-ensure-project-success.gp"
+      },
+      {
+        "name": "Project risk management",
+        "url": "https://member.goodpractice.net/csl-competency/resources/delivering-results/project-management/risk-management/project-risk-management.gp"
+      },
+      {
+        "name": "Project management pocketbook",
+        "url": "https://tinyurl.com/k73hpwk"
+      },
+      {
+        "name": "Project management learning guide",
+        "url": "https://virtual.ashridge.org.uk/en-gb/materials/learningguides/pmlg/Pages/Default.aspx"
+      },
+      {
+        "name": "Analysing project stakeholders",
+        "url": "https://member.goodpractice.net/csl-competency/resources/delivering-results/project-management/risk-management/analysing-project-stakeholders.gp"
+      }
+   ]
+}

@@ -1,0 +1,51 @@
+{% extends "rebrand_layout.html" %}
+
+{% block page_title %}CSL Sign in screen{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">Priority area: Project delivery</h1>
+
+  <div class="text">
+    <p class="lede">Everyone needs to be skilled in project management to ensure work is delivered on time, to budget and is properly managed.</p>
+
+    <p>This page signposts you to learning in this priority area
+    for the Civil Service</p>
+  </div>
+
+  <div class="text course-list-wrapper">
+
+    <h2 class="heading-medium">E-learning</h2>
+    <ul class="list-bullet">
+    {% for course in courses['e-learning'] %}
+      {% include "partials/priority_area.html" ignore missing %}
+    {% endfor %}
+    </ul>
+
+    <h2 class="heading-medium">Face to face courses</h2>
+    <ul class="list-bullet">
+    {% for course in courses['f2f'] %}
+      {% include "partials/priority_area.html" ignore missing %}
+    {% endfor %}
+    </ul>
+
+    <p>You can also view the <a href="https://civilservicelearning.civilservice.gov.uk/node/495303">courses</a> available to those in the project delivery profession.</p>
+
+    <h2 class="heading-medium">Resources</h2>
+    <ul class="list-bullet">
+    {% for course in courses['resources'] %}
+      {% include "partials/priority_area.html" ignore missing %}
+    {% endfor %}
+    </ul>
+
+    <p>Back to <a href="/rebrand/guide-priority-learning">priority learning</a> overview page</p>
+
+  </div>
+
+</main>
+
+<div class="feedback-footer">
+  <a href="">Is there anything wrong with this page?</a>
+</div>
+{% endblock %}

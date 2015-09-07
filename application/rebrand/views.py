@@ -35,6 +35,10 @@ def course_e_learning():
 def professions():
   return render_template('professions.html')
 
+
+# ------------------------------------
+# Priority areas
+# ------------------------------------
 @blueprint.route('/guide-priority-learning')
 def priorities():
   return render_template('priority-learning.html')
@@ -56,3 +60,9 @@ def change_leadership():
   with open('application/data/change_leadership.json') as data_file:
     courses = json.load( data_file )
   return render_template('change_leadership.html', courses=courses)
+
+@blueprint.route('/project-delivery')
+def project_delivery():
+  with open('application/data/project_delivery.json') as data_file:
+    courses = json.load( data_file )
+  return render_template('project_delivery.html', courses=courses)
