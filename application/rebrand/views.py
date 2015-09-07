@@ -44,3 +44,9 @@ def commercial():
   with open('application/data/commercial.json') as data_file:
     courses = json.load( data_file )
   return render_template('commercial.html', courses=courses)
+
+@blueprint.route('/digital')
+def digital():
+  with open('application/data/digital.json') as data_file:
+    courses = json.load( data_file )
+  return render_template('digital.html', courses=courses)

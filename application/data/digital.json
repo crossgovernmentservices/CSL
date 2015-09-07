@@ -1,0 +1,114 @@
+{  
+   "e-learning":[  
+      {  
+         "name":"Digital awareness: 'digital by default'",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-awareness-%E2%80%93-what-%E2%80%98digital-default%E2%80%99-means-government"
+      },
+      {  
+         "name":"Digital skills video - listening to users",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning/course/view.php?id=740"
+      },
+      {  
+         "name":"Digital skills video - starting with user needs",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning/course/view.php?id=743"
+      },
+      {  
+         "name":"Digital skills video - transforming services with Agile",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning/course/view.php?id=741"
+      },
+      {  
+         "name":"Digital skills video - using social media in public services",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning/course/view.php?id=742"
+      },
+      {  
+         "name":"Helping customers in the digital world",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/helping-customers-digital-world"
+      }
+   ],
+   "MOOC":[
+      {
+        "name": "Introduction to CyberSecurity",
+        "description": "- Open University starts July 13th",
+        "url": "https://www.futurelearn.com/courses/introduction-to-cyber-security"
+      },
+      {
+        "name": "Data to insight - an introduction to data analysis",
+        "description": "- University of Auckland starts October 19th",
+        "url": "https://www.futurelearn.com/courses/data-to-insight"
+      },
+      {
+        "name": "The Internet of Things",
+        "description": "- Kings College starts November 23rd",
+        "url": "https://www.futurelearn.com/courses/internet-of-things"
+      },
+      {
+        "name": "Web Science - How the web is changing the world",
+        "description": "- University of Southampton start tbc",
+        "url": "https://www.futurelearn.com/courses/web-science"
+      }
+   ],
+   "f2f":[
+      {
+        "name": "The digital landscape masterclass",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/faceotface/digital-landscape-half-day-masterclass"
+      },
+      {
+        "name": "Digital foundation day",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-foundation-day"
+      }
+   ],
+   "resources":[
+      {
+        "name": "Introductory guide to open internet tools",
+        "description": "- Free on-line learning on a range of internet tools such as: SMART survey, trello and twitter",
+        "url": "https://www.gov.uk/government/publications/digital-skills-in-the-civil-service"
+      },
+      {
+        "name": "Gov.UK Guidance-digital & technology skills",
+        "description": "- How to measure and interpret data to improve services",
+        "url": "https://www.gov.uk/guidance/digital-and-technology-skills/performance-analysis"
+      },
+      {
+        "name": "A digital Civil Service",
+        "url": "http://my.civilservice.gov.uk/reform/digital/"
+      },
+      {
+        "name": "Big data",
+        "url": "https://tinyurl.com/pfst6ut"
+      },
+      {
+        "name": "Digital landscape research",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/digital-landscape-research"
+      },
+      {
+        "name": "Introduction to social media",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/introduction-social-media"
+      },
+      {
+        "name": "Social media guidance",
+        "url": "https://www.gov.uk/government/publications/social-media-guidance-for-civil-servants"
+      },
+      {
+        "name": "Operational Delivery Profession Digital and IT capabilities",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/digital-and-it-capabilities"
+      }
+   ],
+   "specialist":[
+      {
+        "name": "GCS - introduction to social media",
+        "description": "- for communications professionals or those with communication responsibilities.",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/introduction-social-media"
+      },
+      {
+        "name": "Services manager induction programme",
+        "description": "- for all service managers, request a place through GDS",
+        "url": "https://www.gov.uk/service-manual/the-team/induction-and-development.html"
+      },
+      {
+        "name": "Services manager open programme",
+        "description": "- for service managers and their teams, request a place through GDS",
+        "url": "https://www.gov.uk/service-manual/the-team/induction-and-development.html#open-programme"
+      }
+   ]
+}
+ 
