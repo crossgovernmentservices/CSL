@@ -29,5 +29,81 @@
          "name":"Finance skills for all (12 modules)",
          "url":"https://civilservicelearning.civilservice.gov.uk/finance-skills-for-all"
       }
+   ],
+   "MOOC":[
+      {
+        "name": "Contract management: building relationships in business",
+        "description": "from Southampton University and the International Association of Commercial and Contract Management - This free 3 week on-line course will run again on November 9th. Please click on this link to register",
+        "url": "https://www.futurelearn.com/courses/contract-management"
+      }
+   ],
+   "f2f":[
+      {
+        "name": "Commercial and financial acumen for leaders",
+        "description": "(previously known as Developing commercial awareness masterclass)",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/developing-commercial-awareness-masterclass"
+      },
+      {
+        "name": "Commercial Masterclass 1 - Effective Commercial Planning and Contracting",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/commercial-master-class-1-effective-commercial-planning-contracting"
+      },
+      {
+        "name": "Commercial Masterclass 2 - Achieving Supplier Engagement",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/commercial-master-classes-2-%E2%80%93-achieving-supplier-engagement"
+      },
+      {
+        "name": "Commercial skills for leaders",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/commercial-skills-leaders-0"
+      },
+      {
+        "name": "Contract management for leaders",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/contract-management-leaders"
+      },
+      {
+        "name": "Financial leadership - decision-making and achieving better value for money",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/financial-leadership-decision-making-and-achieving-better-value-money-0"
+      },
+      {
+        "name": "Leadership masterclass - Successful Negotiation Skills",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/leadership-masterclass-%E2%80%93-successful-contract-negotiation"
+      },
+      {
+        "name": "Managing contractors",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/managing-contractors"
+      }
+   ],
+   "resources":[
+      {
+        "name": "Consulting with experts workplace learning activity",
+        "url": "https://civilservicelearning.civilservice.gov.uk/sites/default/files/resources/ManagingBusinessPerformance_WLA_ConsultingWithExperts%20v2_040512.pdf"
+      },
+      {
+        "name": "National Procurement Strategy for Local Government in England 2014",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/national-procurement-strategy-local-government-england-2014"
+      },
+      {
+        "name": "Negotiation skills learning guide",
+        "url": "https://virtual.ashridge.org.uk/en-gb/materials/learningguides/nslg/Pages/Default.aspx"
+      },
+      {
+        "name": "Risk management in procurement",
+        "url": "https://virtual.ashridge.org.uk/en-GB/materials/hottopics/Pages/Risk-management-in-procurement.aspx"
+      },
+      {
+        "name": "Stakeholder identification and consultation workbook",
+        "url": "https://civilservicelearning.civilservice.gov.uk/sites/default/files/resources/ManagingBusinessPerformance_Workbook_StakeholderIdentificationAndConsultation_V.pdf"
+      },
+      {
+        "name": "Top tips to improve your commercial awareness",
+        "url": "https://member.goodpractice.net/csl-competency/resources/setting-direction/commercial-awareness/top-tips-to-improve-your-commercial-awareness.gp"
+      },
+      {
+        "name": "Transforming government’s contract management National Audit Office report (HC 269, September 2014)",
+        "url": "http://www.nao.org.uk/wp-content/uploads/2014/09/Cabinet-office-cross-government-transforming-governments-contract-management.pdf"
+      },
+      {
+        "name": "What is a contract? - A definition of what constitutes a contract",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/what-contract"
+      }
    ]
 }
