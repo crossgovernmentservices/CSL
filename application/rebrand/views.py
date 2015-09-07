@@ -50,3 +50,9 @@ def digital():
   with open('application/data/digital.json') as data_file:
     courses = json.load( data_file )
   return render_template('digital.html', courses=courses)
+
+@blueprint.route('/change-leadership')
+def change_leadership():
+  with open('application/data/change_leadership.json') as data_file:
+    courses = json.load( data_file )
+  return render_template('change_leadership.html', courses=courses)

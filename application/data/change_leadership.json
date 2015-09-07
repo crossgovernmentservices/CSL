@@ -1,0 +1,84 @@
+{  
+   "e-learning":[  
+      {  
+         "name":"Change leadership guide",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/change-leadership-guide"
+      },
+      {  
+         "name":"Introduction to continuous improvement",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/introduction-continuous-improvement"
+      },
+      {  
+         "name":"Employee engagement",
+         "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/employee-engagement"
+      }
+   ],
+   "f2f":[
+      {
+        "name": "Change leaders for senior managers",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/change-leaders-senior-managers-grade-6-7"
+      },
+      {
+        "name": "Communication skills for high stress, high risk situations masterclass",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/communication-skills-high-stress-high-risk-situations-masterclass"
+      },
+      {
+        "name": "Continuous improvement",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/managing-business-performance-continuous-improvement"
+      },
+      {
+        "name": "Leading cultural change masterclass",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/leadership-masterclass-leading-cultural-change"
+      },
+      {
+        "name": "Leading to inspire",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/leading-inspire"
+      },
+      {
+        "name": "Leading to transform",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/leading-transform"
+      },
+      {
+        "name": "Leading with purpose",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/leading-purpose"
+      },
+      {
+        "name": "Managing change - implementing change",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/managing-change-implementing-change"
+      },
+      {
+        "name": "SCS change leaders programme",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/scs-change-leaders-programme"
+      },
+      {
+        "name": "Wicked problems and clumsy solutions masterclass",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/wicked-problems-and-clumsy-solutions-role-leadership-masterclass"
+      }
+   ],
+   "resources":[
+      {
+        "name": "Communicating change",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/managing-change-communicating-change-workplace-learning-activity"
+      },
+      {
+        "name": "Communicating with confidence toolkit",
+        "url": "https://civilservicelearning.civilservice.gov.uk/node/495931"
+      },
+      {
+        "name": "Developing a customer service strategy",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/managing-change-developing-customer-service-strategy-workplace-learning-activity"
+      },
+      {
+        "name": "Employee engagement",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/managing-change-employee-engagement-workplace-learning-activity"
+      },
+      {
+        "name": "Nurturing talent",
+        "url": "https://civilservicelearning.civilservice.gov.uk/learning-resources/managing-change-nurturing-talent-workplace-learning-activity"
+      },
+      {
+        "name": "The leader's guide to storytelling",
+        "url": "https://tinyurl.com/pfgdp8o"
+      }
+   ]
+}
