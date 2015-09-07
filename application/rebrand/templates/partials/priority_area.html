@@ -1,6 +1,22 @@
+{% macro display_course_link(course) %}
+    <li>
+    {% if course.url is defined %}
+      <a href="{{ course.url }}">{{ course.name }}</a> {{ course.description|default('') }}
+    {% else %}
+      {{ course.name }}
+    {% endif %}
+    </li>
+{% endmacro %}
 
-{% if course is mapping %}
-    
+
+{% if course.modules is defined %}
+    <li>{{ course.name }}
+      <ul class="list-bullet">
+        {% for module in course.modules %}
+            {{ display_course_link(module) }}
+        {% endfor %}
+      </ul>
+    </li>
 {% else %}
-    
+    {{ display_course_link(course) }}
 {% endif %}

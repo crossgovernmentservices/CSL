@@ -1,0 +1,33 @@
+{  
+   "e-learning":[  
+      {  
+         "name":"Commercial awareness (5 modules)",
+         "modules":[  
+            {  
+               "name":"Module 1: Foundation",
+               "url":"https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-1-foundation"
+            },
+            {  
+               "name":"Module 2: Strategic Visioning",
+               "url":"https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-2-strategic-visioning"
+            },
+            {  
+               "name":"Module 3: Policy Development",
+               "url":"https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-3-policy-development"
+            },
+            {  
+               "name":"Module 4: Provider Engagement",
+               "url":"https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-4-provider-engagement"
+            },
+            {  
+               "name":"Module 5: Implementation and Delivery",
+               "url":"https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-5-implementation-and-delivery"
+            }
+         ]
+      },
+      {  
+         "name":"Finance skills for all (12 modules)",
+         "url":"https://civilservicelearning.civilservice.gov.uk/finance-skills-for-all"
+      }
+   ]
+}

@@ -15,19 +15,12 @@
   </div>
 
   <div class="text course-list-wrapper">
-    <h2 class="heading-medium">E-learning</h2>
 
+    <h2 class="heading-medium">E-learning</h2>
     <ul class="list-bullet">
-      <li>Commercial awareness (5 modules)
-        <ul class="list-bullet">
-          <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-1-foundation">Module 1&nbsp;: Foundation</a></li>
-          <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-2-strategic-visioning">Module 2&nbsp;: Strategic Visioning</a></li>
-          <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-3-policy-development">Module 3&nbsp;: Policy Development</a></li>
-          <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-4-provider-engagement">Module 4&nbsp;: Provider Engagement</a></li>
-          <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-5-implementation-and-delivery">Module 5&nbsp;: Implementation and Delivery</a></li>
-        </ul>
-      </li>
-      <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/elearning/commercial-awareness-5-implementation-and-delivery">&#8203;</a><a href="https://civilservicelearning.civilservice.gov.uk/finance-skills-for-all">Finance skills for all (12 modules)</a></li>
+    {% for course in courses['e-learning'] %}
+      {% include "partials/priority_area.html" ignore missing %}
+    {% endfor %}
     </ul>
 
     <h2 class="heading-medium">MOOC - massive open on-line course</h2>

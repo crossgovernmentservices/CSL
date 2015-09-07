@@ -2,6 +2,7 @@ from flask import (
   Blueprint,
   render_template,
 )
+import json
 
 
 blueprint = Blueprint(
@@ -27,8 +28,8 @@ def user():
   return render_template('user.html')
 
 @blueprint.route('/course-e-learning')
-  def course_e_learning():
-    return render_template('course-e-learning.html')
+def course_e_learning():
+  return render_template('course-e-learning.html')
 
 @blueprint.route('/professions')
 def professions():
@@ -40,4 +41,6 @@ def priorities():
 
 @blueprint.route('/commercial')
 def commercial():
-  return render_template('commercial.html')
+  with open('application/data/commercial.json') as data_file:
+    courses = json.load( data_file )
+  return render_template('commercial.html', courses=courses)
