@@ -51,10 +51,21 @@
   font-size: 27px;
   margin: 2.5*$gutter 0 10px;
 }
-
+.guide__content__wrapper {
+  position: relative;
+}
 .guide__content {
   .heading-large {
     margin: 2.5*$gutter 0 $gutter-half;
+
+    .number {
+      @include media($min-width: 641px) {
+        font-size: 80px;
+        position: absolute;
+        left: 0;
+        padding-left: 1.5*$gutter;
+      }
+    }
   }
   p {
     margin: $gutter-half 0;
