@@ -35,6 +35,10 @@ def course_e_learning():
 def professions():
   return render_template('professions.html')
 
+@blueprint.route('/how-use-competency-framework')
+def guide_competency_framework():
+  return render_template('guides/competency-framework.html')
+
 
 # ------------------------------------
 # Priority areas

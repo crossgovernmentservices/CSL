@@ -5,6 +5,8 @@
 
 @import '../../../static/css/common/all';
 
+@import 'guide';
+
 .feedback-footer {
   @extend %site-width-container;
   padding: $gutter-half 0;
