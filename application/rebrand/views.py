@@ -39,6 +39,12 @@ def professions():
 def guide_competency_framework():
   return render_template('guides/competency-framework.html')
 
+# ------------------------------------
+# Rebrand course pages
+# ------------------------------------
+@blueprint.route('/course/digital-by-default')
+def course_d_by_d():
+  return render_template('courses/digital-by-default.html')
 
 # ------------------------------------
 # Priority areas
