@@ -10,7 +10,7 @@
 
 
 {% if course.modules is defined %}
-    <li>{{ course.name }}
+    <li>{{ course.name|safe }}test
       <ul class="list-bullet">
         {% for module in course.modules %}
             {{ display_course_link(module) }}

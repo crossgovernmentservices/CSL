@@ -1,0 +1,31 @@
+{% extends "rebrand_layout.html" %}
+
+{% block page_title %}CSL Courses | {{ course.title }} {% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">{{ course.title }}</h1>
+
+  <div class="course-description text">
+    <h2 class="heading-large">Description</h2>
+    {{ course.desc|safe }}
+
+    <h2 class="heading-large">Learning outcomes</h2>
+    {{ course.outcomes.blurb|safe }}
+
+    <ul class="list-bullet">
+    {% for outcome in course.outcomes.points %}
+      <li>{{ outcome }}</li>
+    {% endfor %}
+    </ul>
+
+    {% if course.outcomes.warning is defined %}
+        <div class="panel-indent">{{ course.outcomes.warning|safe }}</div>
+    {% endif %}
+
+  </div>
+
+</main>
+
+{% endblock %}

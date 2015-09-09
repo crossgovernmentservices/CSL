@@ -46,6 +46,12 @@ def guide_competency_framework():
 def course_d_by_d():
   return render_template('courses/digital-by-default.html')
 
+@blueprint.route('/course/unconcious-bias')
+def course_unconcious_bias():
+  with open('application/data/courses/unconscious_bias.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_layout.html', course=course)
+
 # ------------------------------------
 # Priority areas
 # ------------------------------------
