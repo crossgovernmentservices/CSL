@@ -58,6 +58,12 @@ def course_neuroscience_leadership():
     course = json.load( data_file )
   return render_template('course_layout.html', course=course)
 
+@blueprint.route('/course/communicating-with-customers')
+def course_communicating_with_customers():
+  with open('application/data/courses/communicating_with_customers.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_layout.html', course=course)
+
 # ------------------------------------
 # Priority areas
 # ------------------------------------
