@@ -11,6 +11,11 @@
     <h2 class="heading-large">Description</h2>
     {{ course.desc|safe }}
 
+    {% if course["pre-learning"] is defined %}
+    <h2 class="heading-large">Pre-learning requirements</h2>
+    {{ course["pre-learning"]|safe }}
+    {% endif %}
+
     <h2 class="heading-large">Learning outcomes</h2>
     {{ course.outcomes.blurb|safe }}
 
