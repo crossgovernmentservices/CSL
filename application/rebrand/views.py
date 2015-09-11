@@ -64,6 +64,12 @@ def course_communicating_with_customers():
     course = json.load( data_file )
   return render_template('course_layout.html', course=course)
 
+@blueprint.route('/course/constructive-conversations')
+def course_constructive_conversations():
+  with open('application/data/courses/constructive_conversations.json') as data_file:
+    course = json.load( data_file )
+  return render_template('courses/constructive_conversations.html', course=course)
+
 # ------------------------------------
 # Priority areas
 # ------------------------------------
