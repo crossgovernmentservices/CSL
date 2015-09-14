@@ -6,6 +6,7 @@
 @import '../../../static/css/common/all';
 
 @import 'guide';
+@import 'related';
 
 .feedback-footer {
   @extend %site-width-container;
@@ -21,4 +22,8 @@
 
 .text ul {
   margin-bottom: 1em;
+}
+
+.page-header {
+  margin: $gutter 0;
 }
