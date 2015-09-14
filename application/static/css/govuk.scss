@@ -18,9 +18,11 @@
 
 // Import GOV.UK elements which aren't yet in the frontend toolkit
 @import "../govuk_elements/public/sass/elements/helpers";
+$path: "/static/images/";
 @import "../govuk_elements/public/sass/elements/reset";
 @import "../govuk_elements/public/sass/elements/elements-typography";
 @import "../govuk_elements/public/sass/elements/layout";
+@import "../govuk_elements/public/sass/elements/breadcrumb";
 @import "../govuk_elements/public/sass/elements/forms";
 @import "../govuk_elements/public/sass/elements/tables";
 @import "../govuk_elements/public/sass/elements/buttons";
