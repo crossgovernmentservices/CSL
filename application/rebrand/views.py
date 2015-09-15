@@ -82,6 +82,12 @@ def course_good_complaint_handling():
     course = json.load( data_file )
   return render_template('course_layout.html', course=course)
 
+@blueprint.route('/course/economics-for-policy-advisors')
+def course_economics_for_policy_advisors():
+  with open('application/data/courses/economics_for_policy_advisors.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_layout.html', course=course)
+
 # ------------------------------------
 # Priority areas
 # ------------------------------------
