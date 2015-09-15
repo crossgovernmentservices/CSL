@@ -88,6 +88,12 @@ def course_economics_for_policy_advisors():
     course = json.load( data_file )
   return render_template('course_layout.html', course=course)
 
+@blueprint.route('/course/change-leaders-for-senior-management')
+def course_change_leaders_for_senior_management():
+  with open('application/data/courses/change_leaders_for_senior_management.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_layout.html', course=course)
+
 # ------------------------------------
 # Priority areas
 # ------------------------------------
