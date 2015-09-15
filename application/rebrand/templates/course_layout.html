@@ -97,11 +97,17 @@
     <div class="column-third course-metadata-section">
       <h3 class="heading-medium">Level</h3>
       <ul class="list-bullet">
+      {% if course.levels is defined %}
+        {% for level in course.levels %}
+        <li>{{ level }}</li>
+        {% endfor %}
+      {% else %}
         <li>Administrative Level (AA/AO)</li>
         <li>First Line Managers (EO)</li>
         <li>Middle Managers (HEO/SEO)</li>
         <li>Senior Managers (Grade 6/7)</li>
         <li>Senior Civil Servants (SCS)</li>
+      {% endif %}
       </ul>
     </div>
     <div class="column-third course-metadata-section">
