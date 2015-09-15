@@ -70,6 +70,12 @@ def course_constructive_conversations():
     course = json.load( data_file )
   return render_template('courses/constructive_conversations.html', course=course)
 
+@blueprint.route('/course/running-small-projects')
+def course_running_small_projects():
+  with open('application/data/courses/running_small_projects.json') as data_file:
+    course = json.load( data_file )
+  return render_template('courses/running_small_projects.html', course=course)
+
 @blueprint.route('/course/good-complaint-handling')
 def course_good_complaint_handling():
   with open('application/data/courses/good_complaint_handling.json') as data_file:

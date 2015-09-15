@@ -32,6 +32,13 @@
         {% endif %}
         {% endblock %}
 
+        {% block pricing %}
+        {% if course.pricing is defined %}
+        <h2 class="heading-large">Pricing</h2>
+        {{ course.pricing|safe }}
+        {% endif %}
+        {% endblock %}
+
         <h2 class="heading-large">Learning outcomes</h2>
         {{ course.outcomes.blurb|safe }}
 
