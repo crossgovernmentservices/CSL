@@ -117,7 +117,7 @@
         <dt>Product code</dt>
         <dd>DADD13</dd>
         <dt>Duration</dt>
-        <dd>30 mins</dd>
+        <dd>{% if course.duration is defined %} {{ course.duration }} {% endif %}</dd>
       </dl>
     </div>
   </div>
