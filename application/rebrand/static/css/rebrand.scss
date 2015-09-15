@@ -44,3 +44,11 @@
     float: left;
   }
 }
+
+.course-metadata-section {
+  h3 {
+    border-top: 5px solid #0b0c0c;
+    padding: $gutter-half 0;
+    margin-bottom: 0;
+  }
+}
