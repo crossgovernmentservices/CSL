@@ -47,6 +47,12 @@ css_rebrand = Bundle(
   depends='**/*.scss'
 )
 
+js_rebrand = Bundle(
+    'rebrand/js/rebrand.js',
+    filters='jsmin',
+    output='gen/js/rebrand.js'
+)
+
 assets = Environment()
 
 assets.register('css_govuk', css_govuk)
@@ -54,4 +60,6 @@ assets.register('css_styleguide', css_styleguide)
 assets.register('css_learning', css_learning)
 assets.register('css_profile', css_profile)
 assets.register('css_record', css_record)
+
 assets.register('css_rebrand', css_rebrand)
+assets.register('js_rebrand', js_rebrand)
