@@ -9,6 +9,10 @@
 @import 'related';
 @import 'tabs';
 
+.visually-hidden {
+  display: none;
+  visibility: hidden;
+}
 
 .feedback-footer {
   @extend %site-width-container;
@@ -44,6 +48,25 @@
   }
   dd {
     float: left;
+  }
+}
+
+.summary-list-inline {
+  @extend %contain-floats;
+  dt, dd {
+    float: left;
+    margin-bottom: 10px;
+  }
+  dt {
+    clear: left;
+    margin-right: $gutter-half;
+    width: 200px;
+  }
+  dd {
+    font-weight: bold;
+  }
+  .info-highlight {
+    @extend .heading-large;
   }
 }
 
