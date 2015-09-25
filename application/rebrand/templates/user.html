@@ -16,13 +16,13 @@
 
   <nav class="activity-navigation">
       <ul class="tabs">
-          <li><a href="#your-details" class="current">Your details</a></li>
-          <li><a href="#vehicles" class="">Planned training</a></li>
-          <li><a href="#points">Completed training</a></li>
+          <li><a href="#your-details" class="current" data-tab-section="your-details">Your details</a></li>
+          <li><a href="#completed-course" data-tab-section="current-courses">Planned training</a></li>
+          <li><a href="#completed-courses" data-tab-section="completed-courses">Completed training</a></li>
       </ul>
   </nav>
 
-  <section id="your-details">
+  <section id="your-details" class="tab-content">
     <h2 class="visually-hidden">Your details</h2>
     <dl class="summary-list-inline">
       <dt class="visually-hidden">Name</dt>
@@ -56,7 +56,7 @@
     </dl>
   </section>
 
-  <section id="current-courses">
+  <section id="current-courses" class="tab-content">
     <h2 class="heading-medium">In progress</h2>
     <p>You have started the courses below without finishing them.</p>
     <ul class="list-bullet">
@@ -73,7 +73,7 @@
     <a href="">Manage bookings</a>
   </section>
 
-  <section id="completed-course">
+  <section id="completed-courses" class="tab-content">
     <h2 class="heading-medium">Recently completed</h2>
     <p>Recently, you have successfully completed these courses</p>
     <ul class="list-bullet">
