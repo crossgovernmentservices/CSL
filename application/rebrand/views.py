@@ -39,6 +39,10 @@ def professions():
 def guide_competency_framework():
   return render_template('guides/competency-framework.html')
 
+@blueprint.route('/finance-learning-grid')
+def learning_grid():
+  return render_template('learning_grid.html')
+
 # ------------------------------------
 # Rebrand course pages
 # ------------------------------------
