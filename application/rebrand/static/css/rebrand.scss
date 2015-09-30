@@ -88,3 +88,8 @@
     display: block;
   }
 }
+
+.example-separator {
+  margin: 4*$gutter 0;
+  background: $link-colour;
+}
