@@ -93,3 +93,32 @@
   margin: 4*$gutter 0;
   background: $link-colour;
 }
+
+$width: percentage(1/6);
+.gridcopy {
+  tr {
+    background: $highlight-colour;
+  }
+  tr:nth-child(even) {
+    background: $panel-colour;
+  }
+  td, th {
+    border: 2px solid $page-colour;
+    padding: 5px;
+  }
+  td {
+    width: $width;
+    height: 140px;
+  }
+  th, td.axis {
+    background: #1a2792;
+    color: $page-colour;
+    font-weight: 700;
+  }
+  th {
+    padding: 12px 5px 9px;
+  }
+  .empty {
+    background: $page-colour;
+  }
+}
