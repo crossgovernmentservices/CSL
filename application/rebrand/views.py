@@ -54,6 +54,10 @@ def booking_schedule():
 def booking_payment():
   return render_template('Booking_payment.html')
 
+@blueprint.route('/course-booked')
+def booking_done():
+  return render_template('Booking_end.html')
+
 # ------------------------------------
 # Rebrand course pages
 # ------------------------------------
