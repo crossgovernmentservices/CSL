@@ -31,9 +31,14 @@
 
 {% block body_end %}
 
+  {{ super() }}
+  <script src="/static/vendor/jquery/jquery-2.1.4.min.js"></script>
+
   <!-- Styleguide website only assets - for examples and code highlighting -->
   <!--[if gt IE 8]><!--><script type="text/javascript" src="/static/vendor/prism/prism.js"></script><!--<![endif]-->
 
-  {# js scripts here #}
+  {% assets "js_styleguide" %}
+    <script src="{{ ASSET_URL }}"></script>
+  {% endassets %}
 
 {% endblock %}
