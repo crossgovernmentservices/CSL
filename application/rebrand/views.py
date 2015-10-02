@@ -44,6 +44,13 @@ def learning_grid():
   return render_template('learning_grid.html')
 
 # ------------------------------------
+# Booking pages
+# ------------------------------------
+@blueprint.route('/schedule-course')
+def booking_schedule():
+  return render_template('Booking_schedule.html')
+
+# ------------------------------------
 # Rebrand course pages
 # ------------------------------------
 @blueprint.route('/course/digital-by-default')
