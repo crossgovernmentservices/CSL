@@ -50,6 +50,10 @@ def learning_grid():
 def booking_schedule():
   return render_template('Booking_schedule.html')
 
+@blueprint.route('/course-payment')
+def booking_payment():
+  return render_template('Booking_payment.html')
+
 # ------------------------------------
 # Rebrand course pages
 # ------------------------------------
