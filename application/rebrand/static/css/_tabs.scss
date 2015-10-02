@@ -47,3 +47,28 @@
     }
   }
 }
+
+.flat-tabs {
+  border-bottom: 1px solid #bfc1c3;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    padding: 5px $gutter-half;
+
+    &.active {
+      border: 1px solid #bfc1c3;
+      border-bottom: 1px solid #fff;
+      margin-bottom: -1px;
+
+      a {
+        text-decoration: none;
+        color: $text-colour;
+      }
+    }
+  }
+}
+
+.tab-pane {
+  padding: $gutter-half;
+}
