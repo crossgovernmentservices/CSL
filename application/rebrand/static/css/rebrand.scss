@@ -148,3 +148,22 @@ $width: percentage(1/6);
   border-bottom: 1px solid $grey-2;
   padding: $gutter-half 0;
 }
+
+.summary-section {
+  position: relative;
+  border-top: 1px dotted $grey-2;
+  padding: $gutter 0;
+
+  .summary-heading {
+    margin-top: 0;
+  }
+
+  .summary-edit-link {
+    position: absolute;
+    top: $gutter;
+    right: 0;
+    &:visited {
+      color: $link-colour;
+    }
+  }
+}
