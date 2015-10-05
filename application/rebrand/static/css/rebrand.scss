@@ -122,3 +122,29 @@ $width: percentage(1/6);
     background: $page-colour;
   }
 }
+
+.callout {
+  background: $turquoise;
+  color: $page-colour;
+  padding: $gutter;
+  text-align: center;
+  margin-top: $gutter;
+
+  @extend %contain-floats;
+
+  .callout__heading {
+    margin-top: 0;
+  }
+
+  .ref-number {
+    font-size: 27px;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.with-hr {
+  border-bottom: 1px solid $grey-2;
+  padding: $gutter-half 0;
+}
