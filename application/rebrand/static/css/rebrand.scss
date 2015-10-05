@@ -10,7 +10,6 @@
 @import 'tabs';
 @import 'summary-box';
 
-
 .visually-hidden {
   display: none;
   visibility: hidden;
@@ -172,4 +171,15 @@ $width: percentage(1/6);
 
 .secondary-content {
   font-size: 16px;
+}
+
+.submit-btn-group {
+  position: relative;
+  margin: $gutter 0;
+
+  .cancel-btn {
+    position: absolute;
+    right: 0;
+    line-height: 42px;
+  }
 }

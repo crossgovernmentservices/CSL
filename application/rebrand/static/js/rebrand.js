@@ -48,6 +48,19 @@
       return false;
     });
     $(".flat-tabs li.active").trigger("click");
+
+    // mocking checking radio buttons
+    $(".form-group").on("click", "input[type='radio']", function() {
+      var $me = $( this );
+      $me
+        .parents(".form-group")
+          .find("label")
+          .removeClass("selected")
+          .end()
+        .end()
+        .parent("label")
+        .addClass("selected");
+    });
   });
 
 }(jQuery));

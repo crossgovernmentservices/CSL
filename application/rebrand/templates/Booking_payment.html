@@ -41,9 +41,47 @@
 
   <section class="summary-section">
     <h3 class="heading-medium summary-heading">Payment options</h3>
+
+    <form>
+      <fieldset>
+        <details class="secondary-content">
+          <summary>What are the different payment options?</summary>
+          <div class="text">
+            <p>There are three ways to pay for your learning:</p>
+
+            <ol class="list-number">
+              <li>Purchase order - you will need to have a valid purchase order number from your finance team to complete this booking.</li>
+              <li>Government procurement card - your card will be debited as soon as the booking is completed. Personal credit cards cannot be used.</li>
+              <li>Financial approval - when prompted please select an approver to confirm your booking. To find out whether your organisation uses the financial approver process, please contact your learning and development team. They should be able to confirm the name of your financial approver.</li>
+            </ol>
+          </div>
+        </details>
+        <legend class="form-label-bold">Select payment method</legend>
+        <div class="form-group">
+          <label class="block-label" for="payment-type-1">
+              <input id="payment-type-1" type="radio" name="payment-type-group" value="Purchase order">
+              Purchase order
+            </label>
+            <label class="block-label" for="payment-type-2">
+              <input id="payment-type-2" type="radio" name="payment-type-group" value="Government procurement card">
+              Government procurement card
+            </label>
+            <p class="form-block">or</p>
+            <label class="block-label" for="payment-type-3">
+              <input id="payment-type-3" type="radio" name="payment-type-group" value="Financial approval">
+              Financial approval
+            </label>
+        </div>
+        
+      </fieldset>
+    </form>
+
   </section>
 
-  <button class="button">Confirm booking request</button>
+  <div class="submit-btn-group">
+    <button class="button">Confirm booking request</button>
+    <a href="/" class="cancel-btn">Cancel booking request</a>
+  </div>
 
 </main>
 
