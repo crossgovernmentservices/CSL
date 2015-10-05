@@ -8,6 +8,8 @@
 @import 'guide';
 @import 'related';
 @import 'tabs';
+@import 'summary-box';
+
 
 .visually-hidden {
   display: none;
@@ -166,4 +168,8 @@ $width: percentage(1/6);
       color: $link-colour;
     }
   }
+}
+
+.secondary-content {
+  font-size: 16px;
 }
