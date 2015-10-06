@@ -12,6 +12,10 @@
 @import 'tabs';
 @import 'summary-box';
 
+#global-header-bar {
+  background-color: $red;
+}
+
 .visually-hidden {
   display: none;
   visibility: hidden;
@@ -131,7 +135,6 @@ $width: percentage(1/6);
   color: $page-colour;
   padding: $gutter;
   text-align: center;
-  margin-top: $gutter;
 
   @extend %contain-floats;
 
@@ -207,4 +210,16 @@ $width: percentage(1/6);
   .button {
     margin-bottom: 5px;
   }
+}
+
+.csl-brand--flat {
+  border-left: 3px solid $red;
+  background-image: url(/static/images/org_crest_27px_x2.png);
+  background-position: 8px center;
+  background-size: auto 38px;
+  background-repeat: no-repeat;
+  font-size: 27px;
+  line-height: 1em;
+  padding: 6px 0 5px 62px;
+  margin-bottom: $gutter-half;
 }
