@@ -139,9 +139,13 @@ $width: percentage(1/6);
 
   .ref-number {
     font-size: 27px;
-    margin-bottom: 0;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom:0.25em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
