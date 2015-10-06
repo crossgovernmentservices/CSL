@@ -216,3 +216,11 @@ $width: percentage(1/6);
   background-size: auto 25px;
   background-repeat: no-repeat;
 }
+
+.btn--secondary {
+  background-color: $csl-dark-grey;
+  margin-bottom: 8px;
+  &:hover {
+    background-color: $csl-orange;
+  }
+}
