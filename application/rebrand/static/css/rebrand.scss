@@ -224,3 +224,16 @@ $width: percentage(1/6);
     background-color: $csl-orange;
   }
 }
+
+.notification--small {
+  margin: 0 10px;
+  padding: 3px 10px;
+  font-weight: bold;
+  color: #fff;
+  background: $csl-dark-blue;
+}
+
+.notification--inline {
+  padding-left: 10px;
+  border-left: 5px solid $csl-dark-blue;
+}
