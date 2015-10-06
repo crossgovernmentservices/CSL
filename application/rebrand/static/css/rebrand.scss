@@ -187,3 +187,18 @@ $width: percentage(1/6);
 .booking-section {
   margin-bottom: 3*$gutter;
 }
+
+.secondary-action {
+  display: block;
+  margin: 0; padding: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.button-group--stacked {
+  .button {
+    margin-bottom: 5px;
+  }
+}
