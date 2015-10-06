@@ -207,3 +207,12 @@ $width: percentage(1/6);
     margin-bottom: 5px;
   }
 }
+
+.icon-email {
+  padding: 0 19px 0;
+  height: 25px;
+  background-image: url(/static/images/envelope.svg);
+  background-position: 2px auto;
+  background-size: auto 25px;
+  background-repeat: no-repeat;
+}
