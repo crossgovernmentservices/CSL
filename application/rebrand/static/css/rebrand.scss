@@ -248,3 +248,12 @@ $width: percentage(1/6);
   margin-left: 10px;
   font-weight: bold;
 }
+
+.level-separator {
+  border-top: 1px solid $grey-2;
+  margin-top: 2*$gutter;
+
+  h2 {
+    margin-top: $gutter;
+  }
+}
