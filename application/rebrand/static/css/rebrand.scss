@@ -252,8 +252,15 @@ $width: percentage(1/6);
 .level-separator {
   border-top: 1px solid $grey-2;
   margin-top: 2*$gutter;
+  position: relative;
 
   h2 {
     margin-top: $gutter;
   }
+}
+
+.back-to-grid {
+  position: absolute;
+  right: 0; top: 0;
+  line-height: 90px;
 }
