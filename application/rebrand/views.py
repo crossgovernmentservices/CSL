@@ -60,7 +60,7 @@ def booking_done():
 
 @blueprint.route('/user-newcourse')
 def user_newcourse():
-  return render_template('user-newcourse.html')
+  return render_template('user.html', booking_status="requested")
 
 # ------------------------------------
 # Rebrand course pages
