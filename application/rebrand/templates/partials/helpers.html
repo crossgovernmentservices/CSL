@@ -1,0 +1,5 @@
+{% macro link_list(links) %}
+  {% for link in links %}
+    <li><a href="{{ link.href }}">{{ link.text }}</a></li>
+  {% endfor %}
+{%- endmacro %}

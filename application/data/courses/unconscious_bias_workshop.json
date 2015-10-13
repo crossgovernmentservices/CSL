@@ -12,5 +12,13 @@
     ]
   },
   "pricing": "<p>This is a 1-day workshop. The price for 1 person is £208.</p><p>VAT is not included.</p><p>For further details, please call 020 3367 8316 or email <a href='mailto:info@civilservicelearning.org.uk'>info@civilservicelearning.org.uk</a>.</p>",
-  "duration": "1 day"
+  "duration": "1 day",
+  "related_materials": [
+    { "text": "Diversity on Virtual Ashridge", "href": "https://civilservicelearning.civilservice.gov.uk/learning-resources/diversity-virtual-ashridge-0" }
+  ],
+  "related_opportunities": [
+    { "text": "Unconscious bias (e-learning)", "href": "/rebrand/course/unconscious-bias" },
+    { "text": "Unconscious bias workshop for SCS", "href": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/unconscious-bias-workshop-scs" },
+    { "text": "Equality and Diversity Essentials", "href": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/equality-and-diversity-essentials" }
+  ]
 }
