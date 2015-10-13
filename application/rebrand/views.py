@@ -117,6 +117,12 @@ def course_change_leaders_for_senior_management():
     course = json.load( data_file )
   return render_template('course_layout.html', course=course)
 
+@blueprint.route('/course/unconscious-bias-workshop')
+def course_unconscious_bias_workshop():
+  with open('application/data/courses/unconscious_bias_workshop.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_layout.html', course=course)
+
 # ------------------------------------
 # Priority areas
 # ------------------------------------
