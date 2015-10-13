@@ -1,0 +1,37 @@
+<aside class="related">
+  <div class="related-subsection">
+    <h2 class="heading-medium">Learning material</h2>
+    <nav>
+      <ul>
+        {% if course.related_materials is defined %}
+          {% import 'partials/helpers.html' as helpers %}
+          {{ helpers.link_list(course.related_materials) }}
+        {% else %}
+        <li><a href="">Digital Efficiency Report</a></li>
+        <li><a href="">Digital Government, Open Architecture, and Innovation</a></li>
+        <li><a href="">Digital Inclusion – Resources & Tools</a></li>
+        <li><a href="">Digital Landscape research</a></li>
+        <li><a href="">Digital and IT capabilities</a></li>
+        <li><a href="">Digital Services for Small and Medium Enterprises</a></li>
+        <li><a href="">Introduction to social media</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+  <div class="related-subsection">
+    <h2 class="heading-medium">Learning opportunities</h2>
+    <nav>
+      <ul>
+        {% if course.related_opportunities is defined %}
+          {% import 'partials/helpers.html' as helpers %}
+          {{ helpers.link_list(course.related_opportunities) }}
+        {% else %}
+        <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-listening-users">Digital skills - Listening to users</a></li>
+        <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-starting-user-needs">Digital skills - Starting with user needs</a></li>
+        <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-transforming-services-agile">Digital skills - Transforming services with Agile</a></li>
+        <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-using-social-media-public-services">Digital skills - Using social media in public services</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</aside>

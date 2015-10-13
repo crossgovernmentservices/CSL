@@ -66,81 +66,12 @@
     </div>
 
     <div class="column-third related-container">
-      <aside class="related">
-        <div class="related-subsection">
-          <h2 class="heading-medium">Learning material</h2>
-          <nav>
-            <ul>
-              {% if course.related_materials is defined %}
-                {% import 'partials/helpers.html' as helpers %}
-                {{ helpers.link_list(course.related_materials) }}
-              {% else %}
-              <li><a href="">Digital Efficiency Report</a></li>
-              <li><a href="">Digital Government, Open Architecture, and Innovation</a></li>
-              <li><a href="">Digital Inclusion – Resources & Tools</a></li>
-              <li><a href="">Digital Landscape research</a></li>
-              <li><a href="">Digital and IT capabilities</a></li>
-              <li><a href="">Digital Services for Small and Medium Enterprises</a></li>
-              <li><a href="">Introduction to social media</a></li>
-              {% endif %}
-            </ul>
-          </nav>
-        </div>
-        <div class="related-subsection">
-          <h2 class="heading-medium">Learning opportunities</h2>
-          <nav>
-            <ul>
-              {% if course.related_opportunities is defined %}
-                {% import 'partials/helpers.html' as helpers %}
-                {{ helpers.link_list(course.related_opportunities) }}
-              {% else %}
-              <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-listening-users">Digital skills - Listening to users</a></li>
-              <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-starting-user-needs">Digital skills - Starting with user needs</a></li>
-              <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-transforming-services-agile">Digital skills - Transforming services with Agile</a></li>
-              <li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/digital-skills-using-social-media-public-services">Digital skills - Using social media in public services</a></li>
-              {% endif %}
-            </ul>
-          </nav>
-        </div>
-      </aside>
+      {% include "course_partials/related_resources.html" ignore missing %}
     </div>
 
   </div>
 
-  <div class="grid-row">
-    <div class="column-third course-metadata-section">
-      <h3 class="heading-medium">Level</h3>
-      <ul class="list-bullet">
-      {% if course.levels is defined %}
-        {% for level in course.levels %}
-        <li>{{ level }}</li>
-        {% endfor %}
-      {% else %}
-        <li>Administrative Level (AA/AO)</li>
-        <li>First Line Managers (EO)</li>
-        <li>Middle Managers (HEO/SEO)</li>
-        <li>Senior Managers (Grade 6/7)</li>
-        <li>Senior Civil Servants (SCS)</li>
-      {% endif %}
-      </ul>
-    </div>
-    <div class="column-third course-metadata-section">
-      <h3 class="heading-medium">Topic</h3>
-      <ul class="list-bullet">
-        <li><a href="https://civilservicelearning.civilservice.gov.uk/core-skills">Core Skills</a></li>
-        <li><a href="https://civilservicelearning.civilservice.gov.uk/core-skills">Digital & IT</a></li>
-      </ul>
-    </div>
-    <div class="column-third course-metadata-section">
-      <h3 class="heading-medium">Other information</h3>
-      <dl class="definition-inline">
-        <dt>Product code</dt>
-        <dd>DADD13</dd>
-        <dt>Duration</dt>
-        <dd>{% if course.duration is defined %} {{ course.duration }} {% endif %}</dd>
-      </dl>
-    </div>
-  </div>
+  {% include "course_partials/metadata.html" ignore missing %}
 
 </main>
 

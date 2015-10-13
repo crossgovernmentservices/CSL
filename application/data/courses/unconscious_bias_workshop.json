@@ -20,5 +20,15 @@
     { "text": "Unconscious bias (e-learning)", "href": "/rebrand/course/unconscious-bias" },
     { "text": "Unconscious bias workshop for SCS", "href": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/facetoface/unconscious-bias-workshop-scs" },
     { "text": "Equality and Diversity Essentials", "href": "https://civilservicelearning.civilservice.gov.uk/learning-opportunities/equality-and-diversity-essentials" }
+  ],
+  "levels": [
+    "Administrative Level (AA/AO)",
+    "First Line Managers (EO)",
+    "Middle Managers (HEO/SEO)",
+    "Senior Managers (Grade 6/7)"
+  ],
+  "topics": [
+    "Core skills",
+    "Diversity & equality"
   ]
 }
