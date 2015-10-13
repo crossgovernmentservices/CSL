@@ -55,7 +55,11 @@
       </div>
 
       <div class="course-actions">
+      {% if course.type and course.type == "face2face" %}
+        <a href="/rebrand/schedule-course" class="button button-get-started" role="button">Start booking now</a>
+      {% else %}
         <a href="/rebrand/schedule-course" class="button button-get-started" role="button">Start now</a>
+      {% endif %}
         <span><a href="/rebrand/pdp">add to development plan</a></span>
       </div>
 
