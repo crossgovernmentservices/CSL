@@ -64,7 +64,9 @@ def user_newcourse():
 
 @blueprint.route('/search')
 def search():
-  return render_template('search.html')
+  with open('application/data/courses-for-search.json') as data_file:
+    courses = json.load( data_file )
+  return render_template('search.html', courses=courses)
 # ------------------------------------
 # Rebrand course pages
 # ------------------------------------
