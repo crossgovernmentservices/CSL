@@ -18,6 +18,8 @@
 
 .search__label {
   @extend .lede;
+  display: block;
+  margin-top: -1.25em;
 }
 
 .search__input {

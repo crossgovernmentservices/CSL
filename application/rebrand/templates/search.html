@@ -1,0 +1,75 @@
+{% extends "rebrand_layout.html" %}
+
+{% block page_title %}Learning record | CSL{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div id="global-breadcrumb">
+    <ol>
+      <li><a href="/index#rebrand">CSL rebrand</a></li>
+      <li>Search</li>
+    </ol>
+  </div>
+
+  <header class="header-group">
+    <h1 class="sub-heading">Civil Service Learning</h1>
+    <h2 class="heading-xlarge post-sub-heading">Course search</h2>
+  </header>
+
+  {% set  search_alternative = "main-search--csl" %}
+  {% include "partials/main-search.html" ignore missing %}
+
+  <section id="results">
+    <div class="grid-row">
+      <div class="filters column-third">
+        <p class="info">Refine course results</p>
+
+        <div class="filters-content">
+          <form action="get">
+            <div class="form-group filter-field"><label for="" class="form-label">Type</label><input type="text" class="form-control" /></div>
+            <div class="form-group filter-field"><label for="" class="form-label">Skill(s)</label><input type="text" class="form-control" /></div>
+            <div class="form-group filter-field"><label for="" class="form-label">Profession</label><input type="text" class="form-control" /></div>
+            <div class="form-group filter-field"><label for="" class="form-label">Cost</label><input type="text" class="form-control" /></div>
+            <div class="form-group filter-field"><label for="" class="form-label">Key areas</label><input type="text" class="form-control" /></div>
+          </form>
+        </div>
+        <a href="/"><i class="fa fa-bell-o"></i>Receive alerts for this search</a>
+
+      </div>
+      <div class="column-two-thirds">
+
+        <div class="grid-row">
+          <div class="column-third">
+            <p class="info">XXXX courses found</p>
+          </div>
+          <div class="column-two-thirds ta-right">
+            {% include "partials/search/sort-results.html" ignore missing %}
+          </div>
+        </div>
+
+        <ul class="results">
+          <li class="course-result">
+            <div class="grid-row course-result__meta">
+              <div class="column-two-thirds">
+                <i class="fa fa-book"></i>
+                <span> Course</span>
+              </div>
+              <div class="column-third ta-right">
+                <span>Dur: 1hr</span>
+              </div>
+            </div>
+            <h3 class="heading-small course-result__title">Digital awareness: ‘digital by default’</h3>
+            <p class="text">Explaining what ‘digital by default’ means for government and civil servants, this course explores the importance of moving services online for you, your department and the citizen.</p>
+            <ul class="skills">
+              <li>Digital</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

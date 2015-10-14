@@ -62,6 +62,9 @@ def booking_done():
 def user_newcourse():
   return render_template('user.html', booking_status="requested")
 
+@blueprint.route('/search')
+def search():
+  return render_template('search.html')
 # ------------------------------------
 # Rebrand course pages
 # ------------------------------------

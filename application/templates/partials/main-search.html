@@ -1,7 +1,7 @@
 <section class="top-search">
   <div class="grid-row">
     <form action="" class="column-two-thirds">
-      <div class="form-group main-search">
+      <div class="form-group main-search {% if search_alternative is defined %}{{ search_alternative }}{% endif %}">
         <label class="search__label" for="">Search by keyword or course reference</label>
         <input type="text" class="search__input" id="person-search">
         <input class="search__submit" type="submit" value="Search">
