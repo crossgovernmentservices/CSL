@@ -53,6 +53,12 @@ js_rebrand = Bundle(
     output='gen/js/rebrand.js'
 )
 
+js_booking = Bundle(
+    'rebrand/js/booking.js',
+    filters='jsmin',
+    output='gen/js/booking.js'
+)
+
 js_styleguide= Bundle(
     'js/styleguide.js',
     filters='jsmin',
@@ -70,3 +76,5 @@ assets.register('js_styleguide', js_styleguide)
 
 assets.register('css_rebrand', css_rebrand)
 assets.register('js_rebrand', js_rebrand)
+
+assets.register('js_booking', js_booking)
