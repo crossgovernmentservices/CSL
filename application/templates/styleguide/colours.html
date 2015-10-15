@@ -1,0 +1,31 @@
+{% extends "styleguide_layout.html" %}
+
+{% block page_title %}Styleguide{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">
+    Branding
+  </h1>
+
+
+  <h3 class="heading-medium">CSL colours</h3>
+  <div class="example-view">
+    <div class="swatches">
+      {% for colour in colours %}
+      <div class="swatch-wrapper">
+        <div class="swatch swatch-{{ colour.name }}"></div>
+        <ul>
+          <li><b>{{ colour.hex }}</b></li>
+          <li>${{ colour.name }}</li>
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

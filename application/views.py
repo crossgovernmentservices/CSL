@@ -73,3 +73,9 @@ def sg_typog():
 @app.route('/styleguide/components')
 def sg_components():
   return render_template('styleguide/components.html')
+
+@app.route('/styleguide/colours')
+def sg_colours():
+  with open('application/data/colours.json') as data_file:
+    colours = json.load(data_file)
+  return render_template('styleguide/colours.html', colours=colours)
