@@ -14,6 +14,16 @@
     </ol>
   </div>
 
+  {% if status == "waiting" %}
+  <div class="notification-banner">
+    <p>Booking requested. Waiting for confirmation. <a class="check-status-link" href="/rebrand/user-newcourse">Check details</a></p>
+  </div>
+  {% elif status == "confirmed" %}
+  <div class="notification-banner">
+    <p>You are due to attend on DATE. <a class="check-status-link" href="/rebrand/user-newcourse">Check details</a></p>
+  </div>
+  {% endif %}
+
   <div class="grid-row">
     <div class="column-two-thirds">
 

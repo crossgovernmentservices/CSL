@@ -292,3 +292,16 @@ $width: percentage(1/6);
     }
   }
 }
+
+.notification-banner {
+  @extend .panel-indent;
+  border-color: $csl-dark-blue;
+  background: lighten( $csl-dark-blue, 60% );
+  margin-right: 0;
+  position: relative;
+}
+
+.check-status-link {
+  position: absolute;
+  right: 15px;
+}

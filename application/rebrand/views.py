@@ -128,6 +128,18 @@ def course_unconscious_bias_workshop():
     course = json.load( data_file )
   return render_template('course_layout.html', course=course)
 
+@blueprint.route('/course/unconscious-bias-workshop-waiting')
+def course_unconscious_bias_workshop_waiting():
+  with open('application/data/courses/unconscious_bias_workshop.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_layout.html', course=course, status="waiting")
+
+@blueprint.route('/course/unconscious-bias-workshop-confirmed')
+def course_unconscious_bias_workshop_confirmed():
+  with open('application/data/courses/unconscious_bias_workshop.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_layout.html', course=course, status="confirmed")
+
 # ------------------------------------
 # Priority areas
 # ------------------------------------
