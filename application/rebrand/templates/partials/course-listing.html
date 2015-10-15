@@ -8,9 +8,11 @@
       <span>Dur: 1hr</span>
     </div>
   </div>
-  <h3 class="heading-small course-result__title">{{ course.title }}</h3>
+  <h3 class="heading-small course-result__title"><a href="{{ course.url }}">{{ course.title }}</a></h3>
   <p class="text">{{ course.desc }}</p>
   <ul class="skills">
-    <li>Digital</li>
+    {% for topic in course.topics %}
+    <li>{{ topic }}</li>
+    {% endfor %}
   </ul>
 </li>

@@ -1,11 +1,67 @@
 [
-  { "title": "Digital awareness: ‘digital by default’", "desc": "Explaining what ‘digital by default’ means for government and civil servants, this course explores the importance of moving services online for you, your department and the citizen."},
-  { "title": "Change leaders for senior management", "desc": "Senior leaders need to be able to articulate a compelling vision for the future in a way that motivates others."},
-  { "title": "Communicating with customers", "desc": "The purpose of this e-learning is to help you develop your professional communication skills. It explains what is meant by ‘professional communication’"},
-  { "title": "Constructive conversations", "desc": "The workshop demonstrates how to get people back on track quickly, avoid an escalation of the problem and minimise the need for formal procedures."},
-  { "title": "Economics for policy advisors", "desc": "A 3 day workshop that provides an introduction to economics, markets, prices, values and macroeconomics."},
-  { "title": "Good complaint handling", "desc": "This e-learning takes you through the steps involved in good complaint handling and includes practical operational delivery examples."},
-  { "title": "Neuroscience of leadership masterclass", "desc": "This masterclass explains how, by understanding our brains, we can get more out of them."},
-  { "title": "Running small projects", "desc": "This course will give you a practical understanding of the project management process associated with smaller projects."},
-  { "title": "Unconscious bias workshop", "desc": "This workshop increases awareness of your own behaviours, encouraging you to reflect if you need to make changes to your decision-making and thought processes to ensure you are inclusive and fair."}
+  { "title": "Digital awareness: ‘digital by default’",
+    "desc": "Explaining what ‘digital by default’ means for government and civil servants, this course explores the importance of moving services online for you, your department and the citizen.",
+    "url": "/rebrand/course/digital-by-default",
+    "topics": [
+      "Core Skills",
+      "Digital & IT"
+    ]
+  },
+  { "title": "Change leaders for senior management",
+    "desc": "Senior leaders need to be able to articulate a compelling vision for the future in a way that motivates others.",
+    "url": "/rebrand/course/change-leaders-for-senior-management",
+    "topics": [
+      "Leadership & Management"
+    ]
+  },
+  { "title": "Communicating with customers",
+    "desc": "The purpose of this e-learning is to help you develop your professional communication skills. It explains what is meant by ‘professional communication’",
+    "url": "/rebrand/course/communicating-with-customers",
+    "topics": []
+  },
+  { "title": "Constructive conversations",
+    "desc": "The workshop demonstrates how to get people back on track quickly, avoid an escalation of the problem and minimise the need for formal procedures.",
+    "url": "/rebrand/course/constructive-conversations",
+    "topics": [
+      "Leadership & Management",
+      "Managing people"
+    ]
+  },
+  { "title": "Economics for policy advisors",
+    "desc": "A 3 day workshop that provides an introduction to economics, markets, prices, values and macroeconomics.",
+    "url": "/rebrand/course/economics-for-policy-advisors",
+    "topics": []
+  },
+  { "title": "Good complaint handling",
+    "desc": "This e-learning takes you through the steps involved in good complaint handling and includes practical operational delivery examples.",
+    "url": "/rebrand/course/good-complaint-handling",
+    "topics": [
+      "Core skills",
+      "Customer service"
+    ]
+  },
+  { "title": "Neuroscience of leadership masterclass",
+    "desc": "This masterclass explains how, by understanding our brains, we can get more out of them.",
+    "url": "/rebrand/course/neuroscience-of-leadership",
+    "topics": [
+      "Leadership & Management",
+      "Masterclasses"
+    ]
+  },
+  { "title": "Running small projects",
+    "desc": "This course will give you a practical understanding of the project management process associated with smaller projects.",
+    "url": "/rebrand/course/running-small-projects",
+    "topics": [
+      "Core skills",
+      "Project delivery"
+    ]
+  },
+  { "title": "Unconscious bias workshop",
+    "desc": "This workshop increases awareness of your own behaviours, encouraging you to reflect if you need to make changes to your decision-making and thought processes to ensure you are inclusive and fair.",
+    "url": "/rebrand/course/unconscious-bias-workshop",
+    "topics": [
+      "Core skills",
+      "Diversity & equality"
+    ]
+  }
 ]
