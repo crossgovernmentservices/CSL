@@ -122,34 +122,56 @@
         </div><!-- end accordian content -->
       </li>
       {% if booking_status is defined %}
-      <li>
-        <div class="course-wrapper accordian-head notification--inline">
-          <ul class="course-details">
-            <li class="course-detail"><span class="highlight">Unconscious bias workshop</span></li>
-            <li class="course-detail"><span class="secondary">date:</span> 22/11/2015</li>
-            <li class="course-detail course-detail--status"><span class="course-status">awaiting approval</span></li>
-          </ul>
-        </div>
-        <div class="accordian-content">
-          <h4 class="heading-small">Description</h4>
-          <p>This workshop increases awareness of your own behaviours, encouraging you to reflect if you need to make changes to your decision-making and thought processes to ensure you are inclusive and fair. <a href="/rebrand/course/unconscious-bias-workshop-waiting">See full description</a></p>
-          <div class="grid-row">
-            <div class="column-third">
-              <dl>
-                <dt class="heading-small">Address</dt>
-                <dd>Home Office</dd>
-                <dd>2 Marsham Street</dd>
-                <dd>London</dd>
-                <dd>SW1P 4DF</dd>
-              </dl>
-            </div>
-            <div class="column-third">
-              <img src="/rebrand/static/images/2ms_csl.png" alt="" />
-            </div>
-            <div class="column-third"></div>
+        {% if booking_status == "waiting" %}
+        <li>
+          <div class="course-wrapper accordian-head notification--inline">
+            <ul class="course-details">
+              <li class="course-detail"><span class="highlight">Unconscious bias workshop</span></li>
+              <li class="course-detail"><span class="secondary">date:</span> 22/11/2015</li>
+              <li class="course-detail course-detail--status"><span class="course-status">Awaiting confirmation</span></li>
+            </ul>
           </div>
-        </div><!-- end accordian content -->
-      </li>
+          <div class="accordian-content">
+            <dl class="definition-inline">
+              <dt>Status</dt>
+              <dd>Awaiting confirmation from finance department and supplier.</dd>
+              <dt>Booking Ref</dt>
+              <dd>HD123GH</dd>
+            </dl>
+            <h4 class="heading-small">Course description</h4>
+            <p>This workshop increases awareness of your own behaviours, encouraging you to reflect if you need to make changes to your decision-making and thought processes to ensure you are inclusive and fair. <a href="/rebrand/course/unconscious-bias-workshop-waiting">See full description</a></p>
+          </div><!-- end accordian content -->
+        </li>
+        {% elif booking_status == "confirmed" %}
+        <li>
+          <div class="course-wrapper accordian-head notification--inline">
+            <ul class="course-details">
+              <li class="course-detail"><span class="highlight">Unconscious bias workshop</span></li>
+              <li class="course-detail"><span class="secondary">date:</span> 22/11/2015</li>
+              <li class="course-detail course-detail--status"><span class="course-status--confirmed">Confirmed</span></li>
+            </ul>
+          </div>
+          <div class="accordian-content">
+            <h4 class="heading-small">Description</h4>
+            <p>This workshop increases awareness of your own behaviours, encouraging you to reflect if you need to make changes to your decision-making and thought processes to ensure you are inclusive and fair. <a href="/rebrand/course/unconscious-bias-workshop-waiting">See full description</a></p>
+            <div class="grid-row">
+              <div class="column-third">
+                <dl>
+                  <dt class="heading-small">Address</dt>
+                  <dd>Home Office</dd>
+                  <dd>2 Marsham Street</dd>
+                  <dd>London</dd>
+                  <dd>SW1P 4DF</dd>
+                </dl>
+              </div>
+              <div class="column-third">
+                <img src="/rebrand/static/images/2ms_csl.png" alt="" />
+              </div>
+              <div class="column-third"></div>
+            </div>
+          </div><!-- end accordian content -->
+        </li>
+        {% endif %}
       {% endif %}
     </ul>
     <h2 class="heading-medium">Group courses</h2>

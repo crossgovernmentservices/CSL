@@ -58,9 +58,9 @@ def booking_payment():
 def booking_done():
   return render_template('Booking_end.html')
 
-@blueprint.route('/user-newcourse')
-def user_newcourse():
-  return render_template('user.html', booking_status="requested")
+@blueprint.route('/user-newcourse/<status>')
+def user_newcourse(status):
+  return render_template('user.html', booking_status=status)
 
 @blueprint.route('/search')
 def search():

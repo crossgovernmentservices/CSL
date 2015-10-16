@@ -252,6 +252,12 @@ $width: percentage(1/6);
   font-weight: bold;
 }
 
+.course-status--confirmed {
+  @extend .course-status;
+  color: $csl-green;
+  border-color: $csl-green;
+}
+
 .level-separator {
   border-top: 1px solid $grey-2;
   margin-top: 2*$gutter;
