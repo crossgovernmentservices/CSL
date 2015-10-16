@@ -307,6 +307,12 @@ $width: percentage(1/6);
   position: relative;
 }
 
+.notification-banner--confirmed {
+  @extend .notification-banner;
+  border-color: $csl-green;
+  background: lighten( $csl-green, 45% );
+}
+
 .check-status-link {
   position: absolute;
   right: 15px;
