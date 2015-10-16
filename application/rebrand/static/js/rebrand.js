@@ -66,6 +66,14 @@
     $(".accordian-head").on("click", function() {
       $( this ).parent("li").toggleClass("accordian--open");
     });
+
+    // for the search box on the profile
+    $(".profile-search-form").on("submit", function(e) {
+      var term = $( this ).find(".search__input").val();
+      var url = window.location.origin + "/rebrand/search?q=" + term;
+      window.location.href = url;
+      e.preventDefault()
+    });
   });
 
 }(jQuery));
