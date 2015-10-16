@@ -170,3 +170,10 @@ def project_delivery():
   with open('application/data/project_delivery.json') as data_file:
     courses = json.load( data_file )
   return render_template('project_delivery.html', courses=courses)
+
+# ------------------------------------
+# Misc
+# ------------------------------------
+@blueprint.route('/conf-email')
+def conf_email():
+  return render_template('email_confirmation.html')
