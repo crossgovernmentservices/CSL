@@ -71,18 +71,46 @@
   <section id="current-courses" class="tab-content">
     <h2 class="heading-medium">In progress</h2>
     <p>You have started the courses below without finishing them.</p>
-    <ul class="list-bullet">
-      <li><a href="/rebrand/course/unconscious-bias">Unconscious bias</a></li>
-      <li><a href="/rebrand/course/digital-by-default">Digital by default</a></li>
+    <ul class="list-bullet course-list--profile">
+      <li>
+        <div class="course-wrapper">
+          <ul class="course-details">
+            <li class="course-detail"><a class="highlight" href="/rebrand/course/unconscious-bias">Unconscious bias</a></li>
+            <li class="course-detail"><span class="secondary">started:</span> 12/06/2015</li>
+            <li class="course-detail"><span class="secondary">last visited:</span> 23/08/2015</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="course-wrapper">
+          <ul class="course-details">
+            <li class="course-detail"><a class="highlight" href="/rebrand/course/digital-by-default">Digital by default</a></li>
+            <li class="course-detail"><span class="secondary">started:</span> 05/07/2015</li>
+            <li class="course-detail"><span class="secondary">last visited:</span> 06/07/2015</li>
+          </ul>
+        </div>
+      </li>
     </ul>
     <h2 class="heading-medium">Upcoming face to face opportunities</h2>
     <p>You have the following face to face opportunities scheduled</p>
-    <ul class="list-bullet">
-      <li><a href="/rebrand/course/change-leaders-for-senior-management">Change leaders for senior management</a></li>
+    <ul class="list-bullet course-list--profile">
+      <li>
+        <div class="course-wrapper">
+          <ul class="course-details">
+            <li class="course-detail"><a class="highlight" href="/rebrand/course/change-leaders-for-senior-management">Change leaders for senior management</a></li>
+            <li class="course-detail"><span class="secondary">date:</span> 29/10/2015</li>
+          </ul>
+        </div>
+      </li>
       {% if booking_status is defined %}
       <li>
-        <a class="notification--inline" href="/rebrand/course/running-small-projects">Running small projects</a>
-        <span class="course-status">awaiting approval</span>
+        <div class="course-wrapper notification--inline">
+          <ul class="course-details">
+            <li class="course-detail"><a class="highlight" href="/rebrand/course/running-small-projects">Running small projects</a></li>
+            <li class="course-detail"><span class="secondary">date:</span> 22/11/2015</li>
+            <li class="course-detail course-detail--status"><span class="course-status">awaiting approval</span></li>
+          </ul>
+        </div>
       </li>
       {% endif %}
     </ul>

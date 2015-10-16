@@ -305,3 +305,44 @@ $width: percentage(1/6);
   position: absolute;
   right: 15px;
 }
+
+.course-list--profile {
+  padding-left: 0;
+
+  > li {
+    border: 1px solid $csl-dark-blue;
+    margin: 0 0 10px;
+    list-style: none;
+  }
+}
+
+%course-summary-item {
+  padding: 0 $gutter-half;
+  line-height: 2em;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.course-details {
+  @extend %contain-floats;
+  padding-top: 3px;
+
+  .course-detail {
+    margin: 0 15px 0 0;
+    float: left;
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .secondary {
+      color: $secondary-text-colour;
+    }
+  }
+}
+
+.accordian-head, .course-wrapper {
+  @extend %course-summary-item;
+}
