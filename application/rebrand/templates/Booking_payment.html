@@ -61,19 +61,23 @@
         </details>
         <legend class="form-label-bold">Select payment method</legend>
         <div class="form-group">
-          <label class="block-label" for="payment-type-1">
-              <input id="payment-type-1" type="radio" name="payment-type-group" value="Purchase order">
-              Purchase order
-            </label>
-            <label class="block-label" for="payment-type-2">
-              <input id="payment-type-2" type="radio" name="payment-type-group" value="Government procurement card">
-              Government procurement card
-            </label>
-            <p class="form-block">or</p>
-            <label class="block-label" for="payment-type-3">
-              <input id="payment-type-3" type="radio" name="payment-type-group" value="Financial approval">
-              Financial approval
-            </label>
+          <label class="block-label po-no-btn" for="payment-type-1" data-target="po-no">
+            <input id="payment-type-1" type="radio" name="payment-type-group" value="Purchase order">
+            Purchase order
+          </label>
+          <div class="panel-indent el-hidden" id="po-no">
+            <label class="form-label" for="po-number">Purchase order number</label>
+            <input class="form-control" name="po-number" type="text" id="po-number">
+          </div>
+          <label class="block-label" for="payment-type-2">
+            <input id="payment-type-2" type="radio" name="payment-type-group" value="Government procurement card">
+            Government procurement card
+          </label>
+          <p class="form-block">or</p>
+          <label class="block-label" for="payment-type-3">
+            <input id="payment-type-3" type="radio" name="payment-type-group" value="Financial approval">
+            Financial approval
+          </label>
         </div>
         
       </fieldset>

@@ -366,3 +366,11 @@ $width: percentage(1/6);
 }
 
 dt.heading-small { margin-top: 0; }
+
+.el-hidden {
+  display: none;
+}
+
+.selected + .el-hidden {
+  display: block;
+}
