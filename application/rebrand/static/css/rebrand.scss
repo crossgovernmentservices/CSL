@@ -343,6 +343,26 @@ $width: percentage(1/6);
   }
 }
 
+.accordian-content {
+  display: none;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.accordian--open {
+  .accordian-head {
+    border-bottom: 1px solid $csl-light-grey;
+  }
+  .accordian-content {
+    display: block;
+    padding: $gutter-half;
+  }
+}
+
 .accordian-head, .course-wrapper {
   @extend %course-summary-item;
 }
+
+dt.heading-small { margin-top: 0; }

@@ -61,6 +61,11 @@
         .parent("label")
         .addClass("selected");
     });
+
+    // for accordian course listings on profile
+    $(".accordian-head").on("click", function() {
+      $( this ).parent("li").toggleClass("accordian--open");
+    });
   });
 
 }(jQuery));
