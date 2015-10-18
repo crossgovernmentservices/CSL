@@ -21,7 +21,13 @@
       .filter("#" + currentContentSel )
         .show();
 
-    // still needs to update hash
+    // update hash, has legacy browser fallback
+    if(history.pushState) {
+        history.pushState(null, null, "#" + currentContentSel);
+    }
+    else {
+        location.hash = "#" + currentContentSel;
+    }
     // plus ARIA
   };
 
