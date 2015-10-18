@@ -358,6 +358,10 @@ $width: percentage(1/6);
 .accordian-content {
   display: none;
 
+  .panel-indent {
+    margin-bottom: $gutter;
+  }
+
   img {
     max-width: 100%;
   }
@@ -385,4 +389,12 @@ dt.heading-small { margin-top: 0; }
 
 .selected + .el-hidden {
   display: block;
+}
+
+.time-details {
+  margin: -8px 0 12px;
+}
+
+.map-details {
+  margin-top: 8px;
 }
