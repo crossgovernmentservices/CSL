@@ -35,7 +35,8 @@
       var numOfResults = $courses
         .hide()
         .filter(function(ind, el) {
-            return $(el).text().indexOf( searchTerm ) !== -1; 
+            var listingText = $(el).text().toLowerCase();
+            return listingText.indexOf( searchTerm.toLowerCase() ) !== -1; 
           })
           .show().length;
         $(".numofresults").text(numOfResults);
