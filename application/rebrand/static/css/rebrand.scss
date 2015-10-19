@@ -418,3 +418,23 @@ dt.heading-small { margin-top: 0; }
     background: darken( $csl-red, 5% );
   }
 }
+
+.profile-section {
+  padding-top: 45px;
+
+  .profile-section-heading {
+    margin-top: 0;
+  }
+}
+
+.profile-section__editable {
+  position: relative;
+
+  .btn-edit {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
