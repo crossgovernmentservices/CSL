@@ -398,3 +398,14 @@ dt.heading-small { margin-top: 0; }
 .map-details {
   margin-top: 8px;
 }
+
+.btn-csl {
+  @extend .button;
+  background: $csl-red;
+  &:visited {
+    background: $csl-red;
+  }
+  &:hover {
+    background: darken( $csl-red, 5% );
+  }
+}
