@@ -381,6 +381,15 @@ $width: percentage(1/6);
   @extend %course-summary-item;
 }
 
+.accordian-head:hover {
+  background: lighten( $csl-light-grey, 10% );
+  cursor: pointer;
+
+  .highlight {
+    text-decoration: underline;
+  }
+}
+
 dt.heading-small { margin-top: 0; }
 
 .el-hidden {
