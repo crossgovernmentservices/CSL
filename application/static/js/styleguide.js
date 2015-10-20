@@ -13,6 +13,12 @@
       return false;
     });
     $(".flat-tabs li.active").trigger("click");
+
+    // for accordian course listings on profile
+    $(".accordion-head").on("click", function() {
+      $( this ).parent(".accordion").toggleClass("accordion--open");
+    });
+
   });
 
 }(jQuery));

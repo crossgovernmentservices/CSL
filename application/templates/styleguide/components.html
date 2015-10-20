@@ -54,6 +54,23 @@
     </div>
   </div>
 
+  <h2 class="heading-medium">Accordion</h2>
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+      <div class="example-view">
+        {% include "snippets/accordion.html" ignore missing %}
+      </div>
+    </div>
+
+    <div class="column-third">
+      <div class="example-code">
+<pre><code class="language-markup">{{ include_raw('snippets/accordion.html') | escape }}</code></pre>
+      </div>
+    </div>
+
+  </div>
+
 </main>
 
 {% endblock %}
