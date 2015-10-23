@@ -504,6 +504,10 @@ dt.heading-small { margin-top: 0; }
     }
   }
 
+  .status-selected {
+    display: none;
+  }
+
   .currently-selected {
     border-left: 10px solid $turquoise;
     td {
@@ -511,6 +515,9 @@ dt.heading-small { margin-top: 0; }
     }
     .date-selection {
       display: none;
+    }
+    .status-selected {
+      display: inline;
     }
   }
 }
