@@ -1,0 +1,134 @@
+{% extends "rebrand_layout.html" %}
+
+{% block page_title %}Select date | Course{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <a href="/rebrand" class="link-back">Back to course description</a>
+
+  <h1 class="heading-xlarge">
+    <span class="heading-secondary">Booking a course</span>
+    Which date can you attend?
+  </h1>
+
+  <div class="booking-section">
+
+    <p class="text">Check on which dates you can attend and in which locations, then select a suitable option below</p>
+
+    <table class="course-select-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Start date</th>
+          <th>Duration</th>
+          <th>Location</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="currently-selected">
+          <td>Unconscious bias workshop</td>
+          <td>22nd Nov 2015</td>
+          <td>1 day</td>
+          <td>London</td>
+          <td>£235</td>
+          <td><a class="date-selection" href="#">select</a><span class="status-selected">selected</span></td>
+        </tr>
+        <tr>
+          <td>Unconscious bias workshop</td>
+          <td>14th Dec 2015</td>
+          <td>1 day</td>
+          <td>London</td>
+          <td>£235</td>
+          <td><a class="date-selection" href="#">select</a></td>
+        </tr>
+        <tr>
+          <td>Unconscious bias workshop</td>
+          <td>19th Feb 2016</td>
+          <td>1 day</td>
+          <td>Manchester</td>
+          <td>£235</td>
+          <td><a class="date-selection" href="#">select</a></td>
+        </tr>
+        <tr>
+          <td>Unconscious bias workshop</td>
+          <td>24th Mar 2016</td>
+          <td>1 day</td>
+          <td>London</td>
+          <td>£235</td>
+          <td><a class="date-selection" href="#">select</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="booking-section">
+    <div class="flat-tabs">
+      <ul>
+        <li data-tab-pane="prebooking-info" class="active"><a href="">Before you book</a></li>
+        <li data-tab-pane="tsandcs"><a href="">Terms and conditions</a></li>
+      </ul>
+    </div>
+
+    <div class="tab-pane" id="prebooking-info">
+      <p class="text">You'll need:</p>
+      <ul class="list-bullet">
+        <li>to be eligible for the course</li>
+        <li>have approval from your line manger (or equivalent)</li>
+        <li>have a PO from your finance team, a GPC card or the name and email of your finance approver</li>
+      </ul>
+      <p class="text">Once a request has been made you and your line manager will receive a receipt of your request.</p>
+      <p class="text">Your finance department and course provider will also be asked to confirm your request. This should take about 1 week.</p>
+    </div>
+    <div class="tab-pane text" id="tsandcs">
+      <h3 class="heading-medium">Terms and Conditions</h3>
+      <p>If the learner or department cancels 21 calendar days or less from the start date of the programme the learner and / or department will be liable for a cancellation cost</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Notification given</th>
+            <th>% Price payable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>22 days or more (before the event)</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>14 - 21 days</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>7 - 13 days</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>Less then 7</td>
+            <td>60%</td>
+          </tr>
+          <tr>
+            <td>Fail to attend</td>
+            <td>100%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>If you can procure a substitution on the same event from your team then no charge applies. You must inform us of any changes by e-mail to info@civilservicelearning.org.uk or call 0203 367 8316 prior to the start date.</p>
+      <p>We reserve the right to cancel a course if minimum delegate numbers have not been reached.</p>
+    </div>
+  </div>
+
+  <div class="panel-indent">
+    <p>By booking this course you are agreeing to the terms and conditions</p>
+  </div>
+
+  <div class="button-group--stacked">
+    <a href="/rebrand/course-payment" class="button">Book selected course</a>
+    <span class="secondary-action"><a href="">+ Save to pdp</a></span>
+  </div>
+
+</main>
+
+{% endblock %}

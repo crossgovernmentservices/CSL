@@ -48,7 +48,7 @@ def learning_grid():
 # ------------------------------------
 @blueprint.route('/schedule-course')
 def booking_schedule():
-  return render_template('Booking_schedule.html')
+  return render_template('Booking_schedule_table.html')
 
 @blueprint.route('/course-payment')
 def booking_payment():
