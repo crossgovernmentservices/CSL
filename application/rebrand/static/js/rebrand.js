@@ -80,6 +80,17 @@
       window.location.href = url;
       e.preventDefault()
     });
+
+    // for selecting a specific date
+    $(".date-selection").on("click", function() {
+      var $table = $( this ).parents(".course-select-table"),
+          $row = $( this ).parents("tr");
+
+      $table.find("tr").removeClass("currently-selected");
+      $row.addClass("currently-selected");
+      return false;
+    })
+
   });
 
 }(jQuery));
