@@ -521,3 +521,9 @@ dt.heading-small { margin-top: 0; }
     }
   }
 }
+
+.table-strip {
+  tbody tr:nth-child(odd) {
+    background: $highlight-colour;
+  }
+}
