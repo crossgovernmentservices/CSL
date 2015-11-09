@@ -1,7 +1,7 @@
 <li class="course-result">
   <div class="grid-row course-result__meta">
     <div class="column-two-thirds">
-      <i class="fa fa-book"></i>
+      <i class="fa {% if course.type == 'face2face' %}fa-book{% else %}fa-laptop{% endif %}"></i>
       <span> Course</span>
     </div>
     <div class="column-third ta-right">
