@@ -5,8 +5,6 @@
 
 @import '../../../static/css/common/all';
 
-@import 'csl-brand';
-
 @import 'guide';
 @import 'related';
 @import 'tabs';
@@ -15,6 +13,8 @@
 @import 'filters';
 @import 'course-results';
 @import 'status-indicator';
+
+@import 'csl-brand';
 
 .visually-hidden {
   display: none;
@@ -273,11 +273,6 @@ $width: percentage(1/6);
   position: absolute;
   right: 0; top: 0;
   line-height: 90px;
-}
-
-.main-search--csl .search__submit {
-  background-color: $csl-red;
-  border-color: $csl-red;
 }
 
 .profile_header {

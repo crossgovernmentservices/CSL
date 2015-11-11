@@ -11,6 +11,11 @@
 @import 'components/tabs';
 @import 'components/accordion';
 
+@import 'common/csl-brand';
+
+
+.sg-csl-bg { background: $csl-red; }
+
 .swatches {
   @extend %contain-floats;
 }
