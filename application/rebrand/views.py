@@ -27,6 +27,10 @@ def home():
 def user():
   return render_template('user.html')
 
+@blueprint.route('/user-summary')
+def user_summary():
+  return render_template('user-summary.html')
+
 @blueprint.route('/course-e-learning')
 def course_e_learning():
   return render_template('course-e-learning.html')
@@ -67,6 +71,7 @@ def search():
   with open('application/data/courses-for-search.json') as data_file:
     courses = json.load( data_file )
   return render_template('search.html', courses=courses)
+
 # ------------------------------------
 # Rebrand course pages
 # ------------------------------------
