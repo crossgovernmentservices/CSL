@@ -242,7 +242,8 @@ $width: percentage(1/6);
   border-left: 5px solid $csl-dark-blue;
 }
 
-.course-status {
+.course-status,
+.flag {
   font-size: 16px;
   padding: 5px 5px 2px;
   border: 2px solid $grey-2;
@@ -257,6 +258,15 @@ $width: percentage(1/6);
   @extend .course-status;
   color: $csl-green;
   border-color: $csl-green;
+}
+
+.flag-done {
+  @extend .course-status;
+  color: $page-colour;
+  border-color: $turquoise;
+  background: $turquoise;
+  padding: 4px 3px 0;
+  text-transform: uppercase;
 }
 
 .level-separator {
@@ -529,4 +539,111 @@ dt.heading-small { margin-top: 0; }
 
 .data-group {
   margin: $gutter 0;
+}
+
+.warning-indent {
+  @extend %contain-floats;
+  margin: $gutter-half 0;
+  .warning-message {
+    padding-left: 35px + $gutter;
+    font-weight: bold;
+  }
+  .icon-important {
+    float: left;
+  }
+}
+
+.icon-important {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url("/static/images/icon-important.png");
+
+  @include device-pixel-ratio() {
+    background-image: file-url("/static/images/icon-important-2x.png");
+    background-size: 100%;
+  }
+}
+
+.notice strong {
+  line-height: 34px;
+  padding-left: 10px;
+}
+
+.done-banner {
+  color: $page-colour;
+  background: $turquoise;
+  padding: 15px 10px;
+  text-align: center;
+  margin-right: 15px;
+
+  .heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.warning-banner {
+  border-left: 5px solid $yellow;
+  background: lighten($yellow, 30%);
+  padding: 10px 0 10px 15px;
+  margin: 30px 15px 30px 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* dl */.df-inline {
+  dd, dt {
+    display: inline;
+  }
+  dt {
+    margin-right: $gutter-half;
+    &:after {
+      content: ':';
+    }
+  }
+  dd {
+    font-weight: bold;
+  }
+}
+
+.pre-req-list {
+  border-top: 1px solid $grey-3;
+  li {
+    position: relative;
+    border-bottom: 1px solid $grey-3;
+    padding: 10px 0;
+  }
+  .status-wrap {
+    text-align: right;
+    span {
+      display: inline-block;
+    }
+  }
+  .course-name {
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .record-link {
+    color: $secondary-text-colour;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.text-secondary {
+  font-size: 16px;
+  color: $secondary-text-colour;
 }

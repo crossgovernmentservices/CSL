@@ -85,6 +85,12 @@ def course_unconscious_bias():
     course = json.load( data_file )
   return render_template('course_layout.html', course=course)
 
+@blueprint.route('/course/simple')
+def course_simple():
+  with open('application/data/courses/unconscious_bias_workshop.json') as data_file:
+    course = json.load( data_file )
+  return render_template('course_simple_journey.html', course=course)
+
 @blueprint.route('/course/neuroscience-of-leadership')
 def course_neuroscience_leadership():
   with open('application/data/courses/neuroscience_of_leadership.json') as data_file:
